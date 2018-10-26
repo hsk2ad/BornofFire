@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 using Cradle;
 using Cradle.StoryFormats.Harlowe;
 
-public class LinkButton : MonoBehaviour
+public class LinkButton : MonoBehaviour, IPointerClickHandler
 {
 
     public delegate void ClickFunction();
@@ -28,8 +29,16 @@ public class LinkButton : MonoBehaviour
         onclick = del;
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
+        Debug.Log("click.");
         onclick();
+    }
+
+    public void OnPointerClick(PointerEventData pedata) {
+        if (pedata.button == PointerEventData.InputButton.Left) {
+            Debug.Log("point");
+            onclick();
+        }
     }
 }
