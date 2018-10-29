@@ -28,14 +28,12 @@ public class Dialogue : MonoBehaviour {
         story.OnOutput += Display;
 
         this.story.Begin();
-        frameno = 0;
         scrolling = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        //consoleScroll.verticalNormalizedPosition = 0;
-        frameno++;
+
 	}
 
     public void Display(StoryOutput output) {
@@ -44,6 +42,12 @@ public class Dialogue : MonoBehaviour {
     }
      
     public void DoLink(StoryLink link) {
+        LinkButton[] links = GetComponentsInChildren<LinkButton>();
+        for (int i = 0; i < links.Length; i++) {
+            if(links[i].live) {
+                links[i].Deactivate();
+            }
+        }
         this.story.DoLink(link);
     }
 
@@ -56,13 +60,15 @@ public class Dialogue : MonoBehaviour {
             return newTextElement;
         } else if(output is StoryLink) {
             GameObject newLinkElement = Instantiate(linkTemplate);
-            Text visibleText = newLinkElement.GetComponent<Text>();
-            visibleText.text = output.Text;
+            //Text visibleText = newLinkElement.GetComponent<Text>();
+            //visibleText.text = output.Text;
 
             LinkButton link = newLinkElement.GetComponent<LinkButton>();
-            link.SetDelegate(() => {
+
+            link.Initialize(() => {
+                link.Deactivate(true);
                 this.DoLink((StoryLink)output);
-            });
+            }, output.Text);
 
             return newLinkElement;
         } /*else if(output is LineBreak) {
@@ -80,7 +86,6 @@ public class Dialogue : MonoBehaviour {
             return;
         }
         uiElement.transform.SetParent(dialogueContainer.transform);
-        //consoleScroll.verticalNormalizedPosition = 0;
         StartCoroutine(ScrollToBottom());
     }
 
@@ -95,8 +100,6 @@ public class Dialogue : MonoBehaviour {
         float scrollDif = consoleScroll.verticalNormalizedPosition;
 
         for (int t = 0; t < updateTime; t++) {
-            //Debug.Log(frameno + ", " + consoleScroll.verticalNormalizedPosition + ", " + t + ", " + (1 - ((float)(t) / updateTime)));
-            //Canvas.ForceUpdateCanvases();
             consoleScroll.verticalNormalizedPosition = (Mathf.Cos((Mathf.PI * t) / (updateTime)) + 1) * scrollDif;
             yield return null;
         }

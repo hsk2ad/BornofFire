@@ -40,6 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae7dae83283ab4e13a6f12c65feaacc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textbox: {fileID: 114922233303909532}
+  live: 0
 --- !u!114 &114922233303909532
 MonoBehaviour:
   m_ObjectHideFlags: 1
