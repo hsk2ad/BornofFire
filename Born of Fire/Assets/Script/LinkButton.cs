@@ -66,12 +66,16 @@ public class LinkButton : MonoBehaviour, IPointerClickHandler
     public void Activate() {
         textbox.text = text;
         textbox.color = ACTIVE_COLOR;
+        textbox.fontStyle = FontStyle.Italic;
         live = true;
     }
 
     public void Deactivate(bool wasSelected = false) {
         if(!wasSelected) {
-            textbox.text = "//" + text;
+            //textbox.text = "//" + text;
+            //gameObject.SetActive(false);
+        } else {
+            textbox.fontStyle = FontStyle.BoldAndItalic;
         }
         live = false;
         textbox.color = INACTIVE_COLOR;

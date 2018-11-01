@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Content: {fileID: 779008130}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 2
+  m_MovementType: 0
   m_Elasticity: 0.1
   m_Inertia: 0
   m_DecelerationRate: 0.135
@@ -575,7 +575,8 @@ MonoBehaviour:
     type: 2}
   dialogueContainer: {fileID: 779008129}
   consoleScroll: {fileID: 1622910977}
-  updateTime: 10
+  updateTime: 20
+  updateBuffer: 0
 --- !u!1 &1923270682
 GameObject:
   m_ObjectHideFlags: 0
