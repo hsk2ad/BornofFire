@@ -40,12 +40,10 @@ public class Dialogue : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(consoleScroll.verticalNormalizedPosition);
+
 	}
 
     public void Display(StoryOutput output) {
-        /*GameObject UIchild = GenerateUIElement(output);
-        AppendToConsole(UIchild);*/
 
         QueuedAction action = GenerateQueueAction(output);
 
@@ -56,7 +54,6 @@ public class Dialogue : MonoBehaviour {
         LinkButton[] links = GetComponentsInChildren<LinkButton>();
         for (int i = 0; i < links.Length; i++) {
             if(links[i].live) {
-                //links[i].Deactivate();
                 QueuedRemoveElement removeAction = new QueuedRemoveElement(links[i].gameObject);
                 queue.Enqueue(removeAction);
             }
@@ -84,44 +81,6 @@ public class Dialogue : MonoBehaviour {
             return new QueuedDisplayLink(newLinkElement, (StoryLink)output);
         }
         return new EmptyQueueAction();
-    }
-
-    GameObject GenerateUIElement(StoryOutput output) {
-        if(output is StoryText) {
-            GameObject newTextElement = Instantiate(textTemplate);
-            Text visibleText = newTextElement.GetComponent<Text>();
-            visibleText.text = output.Text;
-
-            return newTextElement;
-        } else if(output is StoryLink) {
-            GameObject newLinkElement = Instantiate(linkTemplate);
-            //Text visibleText = newLinkElement.GetComponent<Text>();
-            //visibleText.text = output.Text;
-
-            LinkButton link = newLinkElement.GetComponent<LinkButton>();
-
-            link.Initialize(() => {
-                link.Deactivate(true);
-                this.DoLink((StoryLink)output);
-            }, output.Text);
-
-            return newLinkElement;
-        } /*else if(output is LineBreak) {
-            GameObject newLinebreakElement = Instantiate(linebreakTemplate);
-
-            return newLinebreakElement;
-        }*/
-        Debug.Log(output);
-        return null;
-    }
-
-    void AppendToConsole(GameObject uiElement) {
-        if(uiElement == null) {
-            Debug.Log("STINKY");
-            return;
-        }
-        uiElement.transform.SetParent(dialogueContainer.transform);
-        StartCoroutine(ScrollToBottom());
     }
 
     public IEnumerator ScrollToBottom() {
