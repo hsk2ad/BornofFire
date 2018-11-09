@@ -2,7 +2,7 @@
     "console": [
         {
             "type": "message",
-            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:40:3712\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:40:10197\nevery@[native code]\napply@[native code]\ncall@[native code]\ncall@[native code]\nCall@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:37:4450\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:37:18955\nchildrenProbablyInline@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:40:10106\ntransitionIn@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:40:11700\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:41:546\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:43:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:43:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:41:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:43:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:26:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:26:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:43:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:43:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:43:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:43:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:44:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:27:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test.html:27:36747 undefined"
+            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:42:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:42:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:42:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:43:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:28:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:28:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:46:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:29:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:29:36747 undefined"
         }
     ],
     "result": {
@@ -116,6 +116,36 @@
                             }
                         ],
                         "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"(Stop Talking)\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"(Stop Talking)\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "(Stop Talking)",
+                                "text": "\"(Stop Talking)\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "End",
+                                "text": "\"End\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             },
@@ -153,6 +183,64 @@
                             {
                                 "innerText": "Start",
                                 "text": "\"Start\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"(Stop Talking)\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"(Stop Talking)\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "(Stop Talking)",
+                                "text": "\"(Stop Talking)\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "End",
+                                "text": "\"End\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "End",
+                "Pid": "4",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "EndDialogue: \"please\"",
+                        "name": "enddialogue",
+                        "text": "(EndDialogue: \"please\")",
+                        "tokens": [
+                            {
+                                "text": "EndDialogue:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "innerText": "please",
+                                "text": "\"please\"",
                                 "type": "string"
                             }
                         ],

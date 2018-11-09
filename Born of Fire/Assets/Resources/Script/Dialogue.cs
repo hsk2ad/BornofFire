@@ -14,33 +14,64 @@ public class Dialogue : MonoBehaviour {
     public GameObject textTemplate;
     public GameObject linkTemplate;
     public GameObject linebreakTemplate;
+    public GameObject spacerTemplate;
 
     public GameObject dialogueContainer;
 
     public ScrollRect consoleScroll;
 
-    public float updateTime;
-    public float updateBuffer;
+    public float updateTime = 20;
+    public float updateBuffer = 0;
 
     bool scrolling;
+
+    bool open;
 
     Queue<QueuedAction> queue;
 #endregion
 
     // Use this for initialization
     void Start () {
+
+        if(textTemplate == null) {
+            textTemplate = Resources.Load(@"Prefabs/Text") as GameObject;
+        }
+
+        if (linkTemplate == null) {
+            linkTemplate = Resources.Load(@"Prefabs/Link") as GameObject;
+        }
+
+        if (linebreakTemplate == null) {
+            linebreakTemplate = Resources.Load(@"Prefabs/Text") as GameObject;
+        }
+
+        if (spacerTemplate == null) {
+           spacerTemplate = Resources.Load(@"Prefabs/DialogueSpacer") as GameObject;
+        }
+
+        if (dialogueContainer == null || consoleScroll == null) {
+            GameObject holder = GameObject.Find("DialogueHolder");
+            dialogueContainer = holder.transform.GetChild(0).gameObject;
+            consoleScroll = holder.GetComponent<ScrollRect>();
+        }
         story.OnOutput += Display;
 
         scrolling = false;
         queue = new Queue<QueuedAction>();
         StartCoroutine(ProcessQueue());
 
-        this.story.Begin();
+        open = false;
+
+        //this.story.Begin();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (Input.GetKeyDown(KeyCode.Return)) {
+            EndDialogue();
+        } else if(Input.GetKeyDown(KeyCode.Space)) {
+            OpenDialogueWindow();
+        }
 	}
 
     public void Display(StoryOutput output) {
@@ -49,7 +80,34 @@ public class Dialogue : MonoBehaviour {
 
         queue.Enqueue(action);
     }
-     
+
+    public void EndDialogue() {
+        QueuedEnding ending = new QueuedEnding();
+
+        queue.Enqueue(ending);
+    }
+
+    public void CloseDialogueWindow() {
+        consoleScroll.verticalNormalizedPosition = 1;
+        //if (!open) return;
+        for (int i = dialogueContainer.transform.childCount - 1; i >= 0; i--) {
+            Destroy(dialogueContainer.transform.GetChild(i).gameObject);
+        }
+        dialogueContainer.transform.DetachChildren();
+        GameObject spacer = Instantiate(spacerTemplate) as GameObject;
+        spacer.transform.SetParent(dialogueContainer.transform);
+        dialogueContainer.SetActive(false);
+        story.Reset();
+        open = false;
+    }
+
+    public void OpenDialogueWindow() {
+        if (open) return;
+        dialogueContainer.SetActive(true);
+        story.Begin();
+        open = true;
+    }
+
     public void DoLink(StoryLink link) {
         LinkButton[] links = GetComponentsInChildren<LinkButton>();
         for (int i = 0; i < links.Length; i++) {
@@ -186,5 +244,13 @@ class QueuedRemoveElement : QueuedAction {
         toDelete.SetActive(false);
         yield return d.StartCoroutine(d.ScrollToBottom());
         GameObject.Destroy(toDelete);
+    }
+}
+
+class QueuedEnding : QueuedAction {
+    public override IEnumerator PerformAction(Dialogue d) {
+        Debug.Log("Ending!");
+        d.CloseDialogueWindow();
+        yield return null;
     }
 }

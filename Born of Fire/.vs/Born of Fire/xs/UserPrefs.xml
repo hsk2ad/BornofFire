@@ -1,10 +1,8 @@
 ﻿<Properties StartupConfiguration="{09E755C3-F91B-3216-B993-0473275999C9}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Dialogue.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Script/Dialogue.cs">
     <Files>
-      <File FileName="Assets/Script/Dialogue.cs" Line="99" Column="15" />
-      <File FileName="Assets/Cradle/TwineTextPlayer/Core/TwineTextPlayer.cs" Line="129" Column="20" />
-      <File FileName="Assets/Script/LinkButton.cs" Line="20" Column="6" />
+      <File FileName="Assets/Resources/Script/Dialogue.cs" Line="14" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
