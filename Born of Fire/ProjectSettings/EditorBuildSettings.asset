@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Prologue_SherrifScene1.unity
     guid: afad4dc5ff4044fd5af2aada86285799
+  - enabled: 1
+    path: Assets/Resources/Scenes/Prologue_OverworldMenuSelect.unity
+    guid: eec2b3b9c9aca4c5f906c1d47ca9ef05
+  - enabled: 1
+    path: Assets/Resources/Scenes/Prologue_Diner.unity
+    guid: b5e9d10c924744bf7a3cda242526b830
   m_configObjects: {}
