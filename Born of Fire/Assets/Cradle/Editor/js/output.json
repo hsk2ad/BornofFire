@@ -2,18 +2,18 @@
     "console": [
         {
             "type": "message",
-            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:3712\nt@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:19933\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:40621\nsome@[native code]\napply@[native code]\ncall@[native code]\ncall@[native code]\nCall@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:76:4450\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:76:18801\nr@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:40542\na@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:41837\na@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:45808\ne@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:56837\ne@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:56334\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:79:54045\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:80:486\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:82:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:82:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:82:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:82:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:83:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:66:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/OldChurch.html:66:36747 undefined"
+            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:66:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:66:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:66:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:67:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:52:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:52:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:70:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:53:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:53:36747 undefined"
         }
     ],
     "result": {
         "passages": [
             {
-                "Name": "Outside",
+                "Name": "Arrival",
                 "Pid": "1",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "You come to the site of what used to be an old wooden chapel.",
+                        "text": "\"Well, I'll be,\" says the sheriff. \"You must be that investigator from the city. Pleasure to meet you.\"",
                         "type": "text"
                     },
                     {
@@ -21,41 +21,21 @@
                         "type": "br"
                     },
                     {
-                        "text": "The site, barren and empty, awkwardly scars the town square.",
-                        "type": "text"
-                    },
-                    {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "text": "Charred wooden panels haphazardly strew the ground,",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "leftovers of the wreckage.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Look around for clues.\",\"LookAround\"",
+                        "innerText": "link-goto:\"\\\"Pleasure's all mine.\\\" \",\" Sheriff 1\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Look around for clues.\",\"LookAround\")",
+                        "text": "(link-goto:\"\\\"Pleasure's all mine.\\\" \",\" Sheriff 1\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Look around for clues.",
-                                "text": "\"Look around for clues.\"",
+                                "innerText": "\\\"Pleasure's all mine.\\\" ",
+                                "text": "\"\\\"Pleasure's all mine.\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -63,8 +43,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "LookAround",
-                                "text": "\"LookAround\"",
+                                "innerText": " Sheriff 1",
+                                "text": "\" Sheriff 1\"",
                                 "type": "string"
                             }
                         ],
@@ -75,17 +55,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Search underneath the rubble\",\"Underneath\"",
+                        "innerText": "link-goto:\"Shake his hand but say nothing. \",\" Sheriff 1\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Search underneath the rubble\",\"Underneath\")",
+                        "text": "(link-goto:\"Shake his hand but say nothing. \",\" Sheriff 1\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Search underneath the rubble",
-                                "text": "\"Search underneath the rubble\"",
+                                "innerText": "Shake his hand but say nothing. ",
+                                "text": "\"Shake his hand but say nothing. \"",
                                 "type": "string"
                             },
                             {
@@ -93,42 +73,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "Underneath",
-                                "text": "\"Underneath\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": " ",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Leave.\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Leave.\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Leave.",
-                                "text": "\"Leave.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
+                                "innerText": " Sheriff 1",
+                                "text": "\" Sheriff 1\"",
                                 "type": "string"
                             }
                         ],
@@ -137,12 +83,12 @@
                 ]
             },
             {
-                "Name": "LookAround",
+                "Name": " Sheriff 1",
                 "Pid": "2",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "You have no idea what you are looking for, and quickly become confused.",
+                        "text": "\"Let's get right down to business,\" he says, a sudden change of tone. \"I'm hoping you read that case file we sent over.\"",
                         "type": "text"
                     },
                     {
@@ -150,17 +96,21 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Search underneath the rubble\",\"Underneath\"",
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Sure did. Been a while since I've seen a fire this bad.\\\" \",\" Sheriff 2\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Search underneath the rubble\",\"Underneath\")",
+                        "text": "(link-goto:\"\\\"Sure did. Been a while since I've seen a fire this bad.\\\" \",\" Sheriff 2\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Search underneath the rubble",
-                                "text": "\"Search underneath the rubble\"",
+                                "innerText": "\\\"Sure did. Been a while since I've seen a fire this bad.\\\" ",
+                                "text": "\"\\\"Sure did. Been a while since I've seen a fire this bad.\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -168,8 +118,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "Underneath",
-                                "text": "\"Underneath\"",
+                                "innerText": " Sheriff 2",
+                                "text": "\" Sheriff 2\"",
                                 "type": "string"
                             }
                         ],
@@ -178,12 +128,12 @@
                 ]
             },
             {
-                "Name": "Underneath",
+                "Name": " Sheriff 2",
                 "Pid": "3",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "You toss a few scraps of wood to the side,",
+                        "text": "\"That's no surprise,\" he coughs roughly. \"Firefighters could hardly keep the damn thing from scorching the town to oblivion. But they did, thank the lord. Good men, they are. Glad none of them got hurt in the whole ordeal.\"",
                         "type": "text"
                     },
                     {
@@ -191,41 +141,21 @@
                         "type": "br"
                     },
                     {
-                        "text": "straining a bit for the larger panels and beams.",
-                        "type": "text"
-                    },
-                    {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "text": "Underneath a particularly large blackened slab, you find a trap door,",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "outlined with grey where the ash decided to settle.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Open the trapdoor.\",\"Open\"",
+                        "innerText": "link-goto:\"\\\"The case file didn't list a reason for the fire. Any clue what could have started it?\\\" \",\" Sheriff 3\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Open the trapdoor.\",\"Open\")",
+                        "text": "(link-goto:\"\\\"The case file didn't list a reason for the fire. Any clue what could have started it?\\\" \",\" Sheriff 3\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Open the trapdoor.",
-                                "text": "\"Open the trapdoor.\"",
+                                "innerText": "\\\"The case file didn't list a reason for the fire. Any clue what could have started it?\\\" ",
+                                "text": "\"\\\"The case file didn't list a reason for the fire. Any clue what could have started it?\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -233,38 +163,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "Open",
-                                "text": "\"Open\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Leave.\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Leave.\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Leave.",
-                                "text": "\"Leave.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
+                                "innerText": " Sheriff 3",
+                                "text": "\" Sheriff 3\"",
                                 "type": "string"
                             }
                         ],
@@ -273,12 +173,12 @@
                 ]
             },
             {
-                "Name": "Open",
+                "Name": " Sheriff 3",
                 "Pid": "4",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "The door creaks open, revealing a staircase descending into darkness.",
+                        "text": "The sheriff rolls his eyes.",
                         "type": "text"
                     },
                     {
@@ -286,7 +186,11 @@
                         "type": "br"
                     },
                     {
-                        "text": "If danger ever had a smell, the passageway reeks of it.",
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\"Oh, we have some leads,\" he laughs. \"Old Gary is at it again, claiming some college kids burned down the church on his land and started the whole fire. Threatening to sue and have them locked up for life. Typical Gary.\"",
                         "type": "text"
                     },
                     {
@@ -294,47 +198,21 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Go inside.\",\"GoInside\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Go inside.\",\"GoInside\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Go inside.",
-                                "text": "\"Go inside.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "GoInside",
-                                "text": "\"GoInside\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Nope the fuck out.\",\"End\"",
+                        "innerText": "link-goto:\"\\\"Do you think these college kids did it?\\\" \",\" Sheriff 4\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Nope the fuck out.\",\"End\")",
+                        "text": "(link-goto:\"\\\"Do you think these college kids did it?\\\" \",\" Sheriff 4\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Nope the fuck out.",
-                                "text": "\"Nope the fuck out.\"",
+                                "innerText": "\\\"Do you think these college kids did it?\\\" ",
+                                "text": "\"\\\"Do you think these college kids did it?\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -342,8 +220,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "End",
-                                "text": "\"End\"",
+                                "innerText": " Sheriff 4",
+                                "text": "\" Sheriff 4\"",
                                 "type": "string"
                             }
                         ],
@@ -352,79 +230,263 @@
                 ]
             },
             {
-                "Name": "End",
+                "Name": " Sheriff 4",
                 "Pid": "5",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "EndDialogue:\"end\"",
+                        "text": "\"Hard to say what I believe,\" he says after a brief moment. \"Don't get me wrong, I always take whatever Old Gary says with a hint of salt, but this time it seems more plausible than usual...\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "The sheriff is suddenly silent, as if deep in thought.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\"Anyways,\" he continues, \"a gas leak is the most likely cause of the fire. Or that's what the firefighters told me, at least. They said a leak under the orphanage lit the whole place up like a candle.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"So the fire started at the orphanage? Or the church?\\\" \",\" Sheriff 5\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"So the fire started at the orphanage? Or the church?\\\" \",\" Sheriff 5\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"So the fire started at the orphanage? Or the church?\\\" ",
+                                "text": "\"\\\"So the fire started at the orphanage? Or the church?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Sheriff 5",
+                                "text": "\" Sheriff 5\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": " Sheriff 5",
+                "Pid": "6",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"We're not sure exactly,\" he says, a little annoyed. \"We've been a little busy with rebuilding and making sure the people who lost their homes aren't out on the streets this winter. My apologies if we haven't solved your case for you yet.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Things are a bit tense now, and you decide it best to change the topic.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"I'll start on the case in a bit. Know where someone can find a decent meal in this town?\\\" \",\" Sheriff 6\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"I'll start on the case in a bit. Know where someone can find a decent meal in this town?\\\" \",\" Sheriff 6\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"I'll start on the case in a bit. Know where someone can find a decent meal in this town?\\\" ",
+                                "text": "\"\\\"I'll start on the case in a bit. Know where someone can find a decent meal in this town?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Sheriff 6",
+                                "text": "\" Sheriff 6\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Is there anyone else I can ask for information on the fire?\\\" \",\" Sheriff 6\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Is there anyone else I can ask for information on the fire?\\\" \",\" Sheriff 6\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Is there anyone else I can ask for information on the fire?\\\" ",
+                                "text": "\"\\\"Is there anyone else I can ask for information on the fire?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Sheriff 6",
+                                "text": "\" Sheriff 6\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": " Sheriff 6",
+                "Pid": "7",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"The diner isn't a bad place to be,\" the sheriff says, \"whether you're looking for food or rumors. It's across the street from the station. I can have an officer show you down there, if you'd like.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"I'll be alright, thanks.\\\" \",\" Sheriff 7\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"I'll be alright, thanks.\\\" \",\" Sheriff 7\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"I'll be alright, thanks.\\\" ",
+                                "text": "\"\\\"I'll be alright, thanks.\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Sheriff 7",
+                                "text": "\" Sheriff 7\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": " Sheriff 7",
+                "Pid": "8",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Take care of yourself,\" he says with a nod and a pat on the shoulder. \"Things in this town haven't been the same since the fire, and I can't quite explain it, but...\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "The sheriff trails off.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\"Take care of yourself,\" he repeats.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "EndDialogue: \" \"",
                         "name": "enddialogue",
-                        "text": "(EndDialogue:\"end\")",
+                        "text": "(EndDialogue: \" \")",
                         "tokens": [
                             {
                                 "text": "EndDialogue:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "end",
-                                "text": "\"end\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "GoInside",
-                "Pid": "6",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "You step down carefully and come to flat ground after about twenty feet.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "Ahead of you is nothing but black, and you have no idea how far",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "the tunnel stretches out for. You keep a lighter, but you are unsure how much and for how long it will be of use.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Ignite your lighter and forge onward.\",\"Forward\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Ignite your lighter and forge onward.\",\"Forward\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
+                                "text": " ",
+                                "type": "whitespace"
                             },
                             {
-                                "innerText": "Ignite your lighter and forge onward.",
-                                "text": "\"Ignite your lighter and forge onward.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Forward",
-                                "text": "\"Forward\"",
+                                "innerText": " ",
+                                "text": "\" \"",
                                 "type": "string"
                             }
                         ],
@@ -435,398 +497,8 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Nope the fuck out.\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Nope the fuck out.\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Nope the fuck out.",
-                                "text": "\"Nope the fuck out.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "Forward",
-                "Pid": "7",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "You press onward and step to the cold stone floor.",
-                        "type": "text"
-                    },
-                    {
                         "text": "\n",
                         "type": "br"
-                    },
-                    {
-                        "text": "The walls are rough and streaked with moss and mold.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "You only have enough light to see one step in front of you.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "Suddenly, with a puff, your lighter goes out.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "Ahead of you, a light shines faintly. You look behind you and",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "the light from the beginning of the tunnel is nowhere to be seen.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Keep going forward.\",\"KeepGoing\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Keep going forward.\",\"KeepGoing\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Keep going forward.",
-                                "text": "\"Keep going forward.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "KeepGoing",
-                                "text": "\"KeepGoing\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Nope the fuck out.\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Nope the fuck out.\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Nope the fuck out.",
-                                "text": "\"Nope the fuck out.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "KeepGoing",
-                "Pid": "8",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "As you approach the glow at the end of the tunnel,",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "you see shapes begin to take form.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "A room, adorned in red drapery, walls lined with pots",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "of strange herbs and plants.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "In the center, an ornate marble altar, upon which",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "rests a simple cloth doll.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Pick up the doll.\",\"PickUp\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Pick up the doll.\",\"PickUp\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Pick up the doll.",
-                                "text": "\"Pick up the doll.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "PickUp",
-                                "text": "\"PickUp\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Nope the fuck out.\",\"Escape\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Nope the fuck out.\",\"Escape\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Nope the fuck out.",
-                                "text": "\"Nope the fuck out.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Escape",
-                                "text": "\"Escape\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "PickUp",
-                "Pid": "9",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "You step up slowly to the altar.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "The air smells of sage and lemongrass.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "Glancing over the doll, you notice it's yellowed clothes and",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "tattered texture. It must have been here for quite a while.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "You reach out your hand and touch the doll on its head,",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "and everything",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"fades to white.\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"fades to white.\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "fades to white.",
-                                "text": "\"fades to white.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "Escape",
-                "Pid": "10",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "You turn around and prepare to run.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "Whatever you've stumbled upon has seriously jarred your nerves.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "You bolt down the hall, bouncing off the walls, unable to see anything.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "Eventually, you break out into the day.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Take a breather.\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Take a breather.\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Take a breather.",
-                                "text": "\"Take a breather.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
                     }
                 ]
             }
