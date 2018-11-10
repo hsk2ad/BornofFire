@@ -2,18 +2,18 @@
     "console": [
         {
             "type": "message",
-            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:140:3712\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:140:10197\nevery@[native code]\napply@[native code]\ncall@[native code]\ncall@[native code]\nCall@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:137:4450\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:137:18955\nchildrenProbablyInline@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:140:10106\ntransitionIn@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:140:11700\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:141:546\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:143:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:143:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:143:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:143:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:144:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:127:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/DinerScene.html:127:36747 undefined"
+            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:57:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:57:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:57:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:60:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:60:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:58:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:60:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:43:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:43:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:60:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:60:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:60:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:60:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:61:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:44:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Billy_Joel.html:44:36747 undefined"
         }
     ],
     "result": {
         "passages": [
             {
-                "Name": "Enter the Diner",
+                "Name": "Denial",
                 "Pid": "1",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "On the sheriff's suggestion, you decide to stop for a bite to eat at the diner across the street. You can't go wrong with a cup of coffee, and the chance to pick up some juicy gossip was just what this investigator ordered.",
+                        "text": "\"I'm telling you, man, we didn't start the fire!\"",
                         "type": "text"
                     },
                     {
@@ -25,17 +25,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Enter the diner. \",\" Diner 1.5\"",
+                        "innerText": "link-goto:\"\\\"Then who did?\\\"\",\"No one\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Enter the diner. \",\" Diner 1.5\")",
+                        "text": "(link-goto:\"\\\"Then who did?\\\"\",\"No one\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Enter the diner. ",
-                                "text": "\"Enter the diner. \"",
+                                "innerText": "\\\"Then who did?\\\"",
+                                "text": "\"\\\"Then who did?\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -43,8 +43,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Diner 1.5",
-                                "text": "\" Diner 1.5\"",
+                                "innerText": "No one",
+                                "text": "\"No one\"",
                                 "type": "string"
                             }
                         ],
@@ -55,22 +55,40 @@
                         "type": "br"
                     },
                     {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
+                        "innerText": "link-goto:\"\\\"I don't believe you. Where were you at 9 o'clock last Saturday?\\\" \",\"AttheBar\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"I don't believe you. Where were you at 9 o'clock last Saturday?\\\" \",\"AttheBar\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"I don't believe you. Where were you at 9 o'clock last Saturday?\\\" ",
+                                "text": "\"\\\"I don't believe you. Where were you at 9 o'clock last Saturday?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "AttheBar",
+                                "text": "\"AttheBar\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             },
             {
-                "Name": " Diner 2",
+                "Name": "No one",
                 "Pid": "2",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Alright,\" she grins as she jots your order down. \"A burger and a coffee for the bigshot detective from the city.\"",
+                        "text": "\"No one! It was always burning, since the world's been turning!\"",
                         "type": "text"
                     },
                     {
@@ -82,17 +100,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"How did you know...?\\\" \",\" Diner 3\"",
+                        "innerText": "link-goto:\"\\\"I find that improbable.\\\"\",\"It's the truth.\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"How did you know...?\\\" \",\" Diner 3\")",
+                        "text": "(link-goto:\"\\\"I find that improbable.\\\"\",\"It's the truth.\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"How did you know...?\\\" ",
-                                "text": "\"\\\"How did you know...?\\\" \"",
+                                "innerText": "\\\"I find that improbable.\\\"",
+                                "text": "\"\\\"I find that improbable.\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -100,8 +118,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Diner 3",
-                                "text": "\" Diner 3\"",
+                                "innerText": "It's the truth.",
+                                "text": "\"It's the truth.\"",
                                 "type": "string"
                             }
                         ],
@@ -110,12 +128,12 @@
                 ]
             },
             {
-                "Name": " Diner 3",
+                "Name": "It's the truth.",
                 "Pid": "3",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Word travels fast in this town,\" she says, \"and when you're waiting tables you overhear things. Affairs, scandals, detectives visiting from out of town...you hear it all.\"",
+                        "text": "\"It's the truth.\"",
                         "type": "text"
                     },
                     {
@@ -127,17 +145,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"Interesting. Say, err...\\\" \",\" Diner 4\"",
+                        "innerText": "link-goto:\"\\\"I think you're crazy\\\"\",\"Maybe\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Interesting. Say, err...\\\" \",\" Diner 4\")",
+                        "text": "(link-goto:\"\\\"I think you're crazy\\\"\",\"Maybe\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Interesting. Say, err...\\\" ",
-                                "text": "\"\\\"Interesting. Say, err...\\\" \"",
+                                "innerText": "\\\"I think you're crazy\\\"",
+                                "text": "\"\\\"I think you're crazy\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -145,8 +163,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Diner 4",
-                                "text": "\" Diner 4\"",
+                                "innerText": "Maybe",
+                                "text": "\"Maybe\"",
                                 "type": "string"
                             }
                         ],
@@ -155,12 +173,12 @@
                 ]
             },
             {
-                "Name": " Diner 4",
+                "Name": "Maybe",
                 "Pid": "4",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Linda,\" she smiles. \"You can call me Linda.\"",
+                        "text": "\"You may be right. But I'm not the lunatic you're looking for.\"",
                         "type": "text"
                     },
                     {
@@ -172,17 +190,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"Say, Linda...I'm investigating the fire from a few months ago. Have you heard any rumors about that?\\\" \",\" Diner 5\"",
+                        "innerText": "link-goto:\"\\\"I don't believe you. Where were you at 9 o'clock last Saturday?\\\" \",\"AttheBar\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Say, Linda...I'm investigating the fire from a few months ago. Have you heard any rumors about that?\\\" \",\" Diner 5\")",
+                        "text": "(link-goto:\"\\\"I don't believe you. Where were you at 9 o'clock last Saturday?\\\" \",\"AttheBar\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Say, Linda...I'm investigating the fire from a few months ago. Have you heard any rumors about that?\\\" ",
-                                "text": "\"\\\"Say, Linda...I'm investigating the fire from a few months ago. Have you heard any rumors about that?\\\" \"",
+                                "innerText": "\\\"I don't believe you. Where were you at 9 o'clock last Saturday?\\\" ",
+                                "text": "\"\\\"I don't believe you. Where were you at 9 o'clock last Saturday?\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -190,8 +208,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Diner 5",
-                                "text": "\" Diner 5\"",
+                                "innerText": "AttheBar",
+                                "text": "\"AttheBar\"",
                                 "type": "string"
                             }
                         ],
@@ -200,12 +218,12 @@
                 ]
             },
             {
-                "Name": " Diner 5",
+                "Name": "AttheBar",
                 "Pid": "5",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"The fire, huh? I reckon I've heard a whisper or two about it, but nothing I can be sure about.\"",
+                        "text": "\"I was at the bar, playing the piano, I swear! Ask any of my friend John. He was buying my drinks all night.\"",
                         "type": "text"
                     },
                     {
@@ -217,29 +235,17 @@
                         "type": "br"
                     },
                     {
-                        "text": "She puts a hand on her chin and stops to think.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Wait for her politely. \",\" Diner 5.5\"",
+                        "innerText": "link-goto:\"\\\"John no longer lives in the area. He packed his bags, sold the house and bought a ticket to the West Coast. Wants to be a movie star, apparently.\\\"\",\"Good\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Wait for her politely. \",\" Diner 5.5\")",
+                        "text": "(link-goto:\"\\\"John no longer lives in the area. He packed his bags, sold the house and bought a ticket to the West Coast. Wants to be a movie star, apparently.\\\"\",\"Good\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Wait for her politely. ",
-                                "text": "\"Wait for her politely. \"",
+                                "innerText": "\\\"John no longer lives in the area. He packed his bags, sold the house and bought a ticket to the West Coast. Wants to be a movie star, apparently.\\\"",
+                                "text": "\"\\\"John no longer lives in the area. He packed his bags, sold the house and bought a ticket to the West Coast. Wants to be a movie star, apparently.\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -247,22 +253,30 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Diner 5.5",
-                                "text": "\" Diner 5.5\"",
+                                "innerText": "Good",
+                                "text": "\"Good\"",
                                 "type": "string"
                             }
                         ],
                         "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
                     }
                 ]
             },
             {
-                "Name": "Dolls Lead",
+                "Name": "Good",
                 "Pid": "6",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Linda has a somber expression on her face.",
+                        "text": "\"I'm happy to see that he's going ahead with his own life. Now leave me alone! You have no proof.\"",
                         "type": "text"
                     },
                     {
@@ -274,29 +288,17 @@
                         "type": "br"
                     },
                     {
-                        "text": "\"The parents were really devastated,\" she says. \"Still are, too. They're staying at the new church, the nice and renovated one, and they're always praying...Breaks your heart, really.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"So their kid was alone when the fire started?\\\" \",\" Dolls 2\"",
+                        "innerText": "link-goto:\"\\\"You seem in a hurry to get out of town\\\"\",\"Can't Stay\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"So their kid was alone when the fire started?\\\" \",\" Dolls 2\")",
+                        "text": "(link-goto:\"\\\"You seem in a hurry to get out of town\\\"\",\"Can't Stay\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"So their kid was alone when the fire started?\\\" ",
-                                "text": "\"\\\"So their kid was alone when the fire started?\\\" \"",
+                                "innerText": "\\\"You seem in a hurry to get out of town\\\"",
+                                "text": "\"\\\"You seem in a hurry to get out of town\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -304,8 +306,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Dolls 2",
-                                "text": "\" Dolls 2\"",
+                                "innerText": "Can't Stay",
+                                "text": "\"Can't Stay\"",
                                 "type": "string"
                             }
                         ],
@@ -314,12 +316,12 @@
                 ]
             },
             {
-                "Name": "Old Man Lead",
+                "Name": "Can't Stay",
                 "Pid": "7",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"You must mean Old Gary,\" Linda says. \"Bit of a grouch, he is. But that don't make what those kids did any better. Trespassing, arson...\"",
+                        "text": "\"I just can't stay another day, or I won't be here in another year if I don't stay on the charts.\"",
                         "type": "text"
                     },
                     {
@@ -331,17 +333,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"Are you saying some college kids really burned down the church?\\\" \",\" Old Man Lead 2\"",
+                        "innerText": "link-goto:\"\\\"What's that supposed to mean?\\\"\",\"PREASSURE\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Are you saying some college kids really burned down the church?\\\" \",\" Old Man Lead 2\")",
+                        "text": "(link-goto:\"\\\"What's that supposed to mean?\\\"\",\"PREASSURE\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Are you saying some college kids really burned down the church?\\\" ",
-                                "text": "\"\\\"Are you saying some college kids really burned down the church?\\\" \"",
+                                "innerText": "\\\"What's that supposed to mean?\\\"",
+                                "text": "\"\\\"What's that supposed to mean?\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -349,8 +351,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Old Man Lead 2",
-                                "text": "\" Old Man Lead 2\"",
+                                "innerText": "PREASSURE",
+                                "text": "\"PREASSURE\"",
                                 "type": "string"
                             }
                         ],
@@ -359,12 +361,12 @@
                 ]
             },
             {
-                "Name": " Orphanage Lead",
+                "Name": "PREASSURE",
                 "Pid": "8",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Oh, it's no surprise that the townsfolk are chattering about that,\" Linda says with a swagger. \"Damn shame what happened! The entire orphanage burned to the ground, and not a single survivor found long after the flames had gone out.\"",
+                        "text": "\"Oh, I'll tell you what it means. I can't take this preassure.\"",
                         "type": "text"
                     },
                     {
@@ -376,7 +378,7 @@
                         "type": "br"
                     },
                     {
-                        "text": "She crosses her heart, and looks somber for a moment.",
+                        "text": "Billy Joel moves out.",
                         "type": "text"
                     },
                     {
@@ -388,1199 +390,21 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Wait for her to continue. \",\" Orphan 1.5\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Wait for her to continue. \",\" Orphan 1.5\")",
+                        "innerText": "EndDialogue: \"Come now, Virginia!\"",
+                        "name": "enddialogue",
+                        "text": "(EndDialogue: \"Come now, Virginia!\")",
                         "tokens": [
                             {
-                                "text": "link-goto:",
+                                "text": "EndDialogue:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Wait for her to continue. ",
-                                "text": "\"Wait for her to continue. \"",
-                                "type": "string"
+                                "text": " ",
+                                "type": "whitespace"
                             },
                             {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Orphan 1.5",
-                                "text": "\" Orphan 1.5\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    }
-                ]
-            },
-            {
-                "Name": " Dolls 2",
-                "Pid": "9",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "Linda purses her lips.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"Yes, that's what they said, but...\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"But...?\\\" \",\" Dolls 3\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"But...?\\\" \",\" Dolls 3\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"But...?\\\" ",
-                                "text": "\"\\\"But...?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Dolls 3",
-                                "text": "\" Dolls 3\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Dolls 3",
-                "Pid": "10",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"All I'm saying is, it might not have been the fire that killed that little girl,\" she says hesitantly. \"For whatever reason, bad things just seem to happen to kids in this town.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"So something similar has happened before?\\\" \",\" Dolls 4\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"So something similar has happened before?\\\" \",\" Dolls 4\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"So something similar has happened before?\\\" ",
-                                "text": "\"\\\"So something similar has happened before?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Dolls 4",
-                                "text": "\" Dolls 4\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Dolls 4",
-                "Pid": "11",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Sorry dear,\" she says with a frown. \"I ain't gonna talk about it any more...bad mojo, it is. But if you're really curious, why don't you try talking to the parents yourself?\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Not a bad idea. Maybe I'll drop by the church tomorrow with some questions.\\\" \",\" End 3\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Not a bad idea. Maybe I'll drop by the church tomorrow with some questions.\\\" \",\" End 3\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Not a bad idea. Maybe I'll drop by the church tomorrow with some questions.\\\" ",
-                                "text": "\"\\\"Not a bad idea. Maybe I'll drop by the church tomorrow with some questions.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " End 3",
-                                "text": "\" End 3\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " End 3",
-                "Pid": "12",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Feel free to come back here tomorrow too,\" she says with a wink. \"Always nice to have someone interesting to talk to.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "A phone rings behind the counter, and she sighs.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"Excuse me for a moment, I'll be right back with your check, hon.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Wait for the check. \",\" End 3.5\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Wait for the check. \",\" End 3.5\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Wait for the check. ",
-                                "text": "\"Wait for the check. \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " End 3.5",
-                                "text": "\" End 3.5\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    }
-                ]
-            },
-            {
-                "Name": " Old Man Lead 2",
-                "Pid": "13",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Golly, you must be a detective to figure that out!\" she says with a smile. \"Jokes aside, I'm not sure what I really think...Gary has been in a rage since the fire. Claims some teens were up to funny business on his land and started the fire. I'm normally not inclined to believe him, but...\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "The waitress is suddenly quiet, looking a bit distracted.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Everything alright?\\\" \",\" Old Man 3\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Everything alright?\\\" \",\" Old Man 3\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Everything alright?\\\" ",
-                                "text": "\"\\\"Everything alright?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Old Man 3",
-                                "text": "\" Old Man 3\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"What kind of funny business are we talking about here?\\\" \",\" Old Man 3.5\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"What kind of funny business are we talking about here?\\\" \",\" Old Man 3.5\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"What kind of funny business are we talking about here?\\\" ",
-                                "text": "\"\\\"What kind of funny business are we talking about here?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Old Man 3.5",
-                                "text": "\" Old Man 3.5\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Old Man 3",
-                "Pid": "14",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Just a little chilly in here,\" she mumbles with a shrug. \"But, about those kids...Old Gary says they're satanists, wrapped up in some unholy business. I don't really know what's going on, but the whole thing gives me a bad feeling.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"I could try looking into it, if it would make you feel any better.\\\" \",\" Old Man 4\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"I could try looking into it, if it would make you feel any better.\\\" \",\" Old Man 4\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"I could try looking into it, if it would make you feel any better.\\\" ",
-                                "text": "\"\\\"I could try looking into it, if it would make you feel any better.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Old Man 4",
-                                "text": "\" Old Man 4\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Old Man 3.5",
-                "Pid": "15",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"I'm not very sure myself!\" Linda exclaims with wide eyes. \"Satanism, animal sacrifice...there are all kinds of nasty rumors out there about these kids. But who can really know what actually happened?\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Maybe someone should get to the bottom of it.\\\" \",\" Old Man 4\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Maybe someone should get to the bottom of it.\\\" \",\" Old Man 4\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Maybe someone should get to the bottom of it.\\\" ",
-                                "text": "\"\\\"Maybe someone should get to the bottom of it.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Old Man 4",
-                                "text": "\" Old Man 4\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Old Man 4",
-                "Pid": "16",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "She gives a sly wink.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"Well, aren't you a brave one?\" she says. \"Honestly, the whole town and I would sleep easier if someone cleared that whole mess up. More coffee, dear?\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"That would be great. Thanks.\\\" \",\" End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"That would be great. Thanks.\\\" \",\" End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"That would be great. Thanks.\\\" ",
-                                "text": "\"\\\"That would be great. Thanks.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " End",
-                                "text": "\" End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " End",
-                "Pid": "17",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "She fills up your mug with speed and precision, no doubt from years of experience.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"I'll be back soon with the check, hon, so sit tight.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "With a smirk, Linda goes off behind the counter. Still, you're a bit unsettled by what she said. Satanists? Burning down churches? This didn't sound like anything you wanted to be wrapped up in...",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Head out of the diner. \",\" EndDia\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Head out of the diner. \",\" EndDia\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Head out of the diner. ",
-                                "text": "\"Head out of the diner. \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " EndDia",
-                                "text": "\" EndDia\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    }
-                ]
-            },
-            {
-                "Name": " EndDia",
-                "Pid": "18",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "innerText": "ChangeScene:\"Prologue_OverworldMenuSelect\"",
-                        "name": "changescene",
-                        "text": "(ChangeScene:\"Prologue_OverworldMenuSelect\")",
-                        "tokens": [
-                            {
-                                "text": "ChangeScene:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Prologue_OverworldMenuSelect",
-                                "text": "\"Prologue_OverworldMenuSelect\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "  EndDia",
-                "Pid": "19",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "innerText": "ChangeScene:\"Prologue_OverworldMenuSelect\"",
-                        "name": "changescene",
-                        "text": "(ChangeScene:\"Prologue_OverworldMenuSelect\")",
-                        "tokens": [
-                            {
-                                "text": "ChangeScene:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Prologue_OverworldMenuSelect",
-                                "text": "\"Prologue_OverworldMenuSelect\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Orphanage Lead 2",
-                "Pid": "20",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "Linda chuckles, rolling her eyes.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"Yeah, troublemakers,\" she says. \"I ain't ever seen it for myself, but I've heard on the grapevine that these kids are thieves, vandals, druggies...the whole lot. Can't say I blame them though. What else are you supposed to do when life throws you into a hole besides bury yourself? More coffee dear?\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"That would be great. Thanks.\\\" \",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"That would be great. Thanks.\\\" \",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"That would be great. Thanks.\\\" ",
-                                "text": "\"\\\"That would be great. Thanks.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Orphanage Lead 2.5",
-                "Pid": "21",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "Linda suddenly looks annoyed, a frown on her lips.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"For a day or two, maybe,\" she says. \"But it didn't take long for them to forget about it. Alcohol will do that, you know?\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "She shakes her head in disgust.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"I used to donate money to the orphanage, you know? Just a dollar or two each month, since serving tables barely pays the bills. But by God, I thought I was doing something good. Guess it didn't matter in the end.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "She sighs.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"The truth is, most of the townspeople didn't give a damn about the those kids. Never did, and still don't even when they were taken before their time. Oh, it makes me furious...!\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "There's an awkward silence as the waitress fumes, the tips of her ears turning red. I decide to stay quiet. Eventually, she seems to calm down.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"More coffee?\" she offers.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Thanks.\\\" \",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Thanks.\\\" \",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Thanks.\\\" ",
-                                "text": "\"\\\"Thanks.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "End",
-                "Pid": "22",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "She fills up your mug with speed and precision, no doubt from years of experience.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"I'll be back soon with the check, hon, so sit tight.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Wait for the check. \",\" End 1.5\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Wait for the check. \",\" End 1.5\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Wait for the check. ",
-                                "text": "\"Wait for the check. \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " End 1.5",
-                                "text": "\" End 1.5\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Diner 1.5",
-                "Pid": "23",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Hey, mister,\" says the girl at the front booth. \"Table for one?\" ",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "You nod, and she gives you a quick smile before she grabs a menu and leads you to a seat at the counter.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"What can I get for you today, hon?\" she says as she pulls out a notepad from her waist pocket. \"Special of the day is a three egg omelette with all the fixings.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Just a coffee for me.\\\" \",\" Diner 2\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Just a coffee for me.\\\" \",\" Diner 2\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Just a coffee for me.\\\" ",
-                                "text": "\"\\\"Just a coffee for me.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Diner 2",
-                                "text": "\" Diner 2\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    }
-                ]
-            },
-            {
-                "Name": " Diner 5.5",
-                "Pid": "24",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"I'm sure the sheriff told you about Old Gary and his crazy claims,\" she eventually says. \"But did you hear about the orphanage? Or the parents who lost their daughter on the night of the fire? Real upset, those two...\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Tell me more about the old man and the church that burned down.\\\" \",\"Dolls Lead\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Tell me more about the old man and the church that burned down.\\\" \",\"Dolls Lead\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Tell me more about the old man and the church that burned down.\\\" ",
-                                "text": "\"\\\"Tell me more about the old man and the church that burned down.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Dolls Lead",
-                                "text": "\"Dolls Lead\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"You mentioned a girl died during the fire, and her parents were really upset. What's that all about?\\\" \",\"Old Man Lead\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"You mentioned a girl died during the fire, and her parents were really upset. What's that all about?\\\" \",\"Old Man Lead\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"You mentioned a girl died during the fire, and her parents were really upset. What's that all about?\\\" ",
-                                "text": "\"\\\"You mentioned a girl died during the fire, and her parents were really upset. What's that all about?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Old Man Lead",
-                                "text": "\"Old Man Lead\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"I've heard a bit about the orphanage, but nothing detailed. Can you give me some info?\\\" \",\" Orphanage Lead\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"I've heard a bit about the orphanage, but nothing detailed. Can you give me some info?\\\" \",\" Orphanage Lead\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"I've heard a bit about the orphanage, but nothing detailed. Can you give me some info?\\\" ",
-                                "text": "\"\\\"I've heard a bit about the orphanage, but nothing detailed. Can you give me some info?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Orphanage Lead",
-                                "text": "\" Orphanage Lead\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " End 3.5",
-                "Pid": "25",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "After she comes back with the check, you lean back in your seat and take a deep breath. Something felt weird here. How else would that girl have died, if not in the fire? Whatever was going on, you were getting anxious to get some answers...",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Head out from the diner. \",\"  EndDia\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Head out from the diner. \",\"  EndDia\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Head out from the diner. ",
-                                "text": "\"Head out from the diner. \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "  EndDia",
-                                "text": "\"  EndDia\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": " ",
-                        "type": "text"
-                    }
-                ]
-            },
-            {
-                "Name": " Orphan 1.5",
-                "Pid": "26",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Those kids didn't deserve it, you know? Never had parents, never had a real place to call home, but at the end of the day it's all the luck of the draw. Damn shame. Real damn shame. Even if they were nothing but rascals and troublemakers.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Troublemakers?\\\" \",\" Orphanage Lead 2\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Troublemakers?\\\" \",\" Orphanage Lead 2\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Troublemakers?\\\" ",
-                                "text": "\"\\\"Troublemakers?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Orphanage Lead 2",
-                                "text": "\" Orphanage Lead 2\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"I'm sorry. It must have been a real shock for the townspeople.\\\" \",\" Orphanage Lead 2.5\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"I'm sorry. It must have been a real shock for the townspeople.\\\" \",\" Orphanage Lead 2.5\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"I'm sorry. It must have been a real shock for the townspeople.\\\" ",
-                                "text": "\"\\\"I'm sorry. It must have been a real shock for the townspeople.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Orphanage Lead 2.5",
-                                "text": "\" Orphanage Lead 2.5\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " End 1.5",
-                "Pid": "27",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "With a smirk, Linda returns with the check. After you pay, you start to ponder the odd rumors she shared with you. A whole orphanage burns to the ground with no survivors, and no one cared? Sounded just a bit suspicious...",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Head out from the diner. \",\"  EndDia\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Head out from the diner. \",\"  EndDia\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Head out from the diner. ",
-                                "text": "\"Head out from the diner. \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "  EndDia",
-                                "text": "\"  EndDia\"",
+                                "innerText": "Come now, Virginia!",
+                                "text": "\"Come now, Virginia!\"",
                                 "type": "string"
                             }
                         ],

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Prologue_Diner.unity
     guid: b5e9d10c924744bf7a3cda242526b830
+  - enabled: 1
+    path: Assets/Resources/Scenes/Prologue_Inn.unity
+    guid: a1db2639c81a8443386a06a9d83083e1
   m_configObjects: {}

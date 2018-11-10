@@ -62,6 +62,7 @@ public partial class @OldChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage8_Init();
 		passage9_Init();
 		passage10_Init();
+		passage11_Init();
 	}
 
 	// ---------------
@@ -88,7 +89,6 @@ public partial class @OldChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return link("Look around for clues.", "LookAround", null);
 		yield return lineBreak();
 		yield return link("Search underneath the rubble", "Underneath", null);
-		yield return text(" ");
 		yield return lineBreak();
 		yield return link("Leave.", "End", null);
 		yield break;
@@ -151,9 +151,9 @@ public partial class @OldChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return text("If danger ever had a smell, the passageway reeks of it.");
 		yield return lineBreak();
-		yield return link("Go inside.", "GoInside", null);
+		yield return link("Go inside.", "GoInside_Demo", null);
 		yield return lineBreak();
-		yield return link("Nope the fuck out.", "End", null);
+		yield return link("It's too risky.", "End", null);
 		yield break;
 	}
 
@@ -300,6 +300,21 @@ public partial class @OldChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("Eventually, you break out into the day.");
 		yield return lineBreak();
 		yield return link("Take a breather.", "End", null);
+		yield break;
+	}
+
+
+	// .............
+	// #11: GoInside_Demo
+
+	void passage11_Init()
+	{
+		this.Passages[@"GoInside_Demo"] = new StoryPassage(@"GoInside_Demo", new string[]{  }, passage11_Main);
+	}
+
+	IStoryThread passage11_Main()
+	{
+		macros2.ChangeScene("Demo_End");
 		yield break;
 	}
 

@@ -58,6 +58,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage4_Init();
 		passage5_Init();
 		passage6_Init();
+		passage7_Init();
 	}
 
 	// ---------------
@@ -145,7 +146,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Oh, uh, I actually don't no what his deal is. I've never seen him before, but ever since the fire he's just been ... hanging around. He seems nice enough though, I guess.\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros2.EndDialogue("888888888888888");
+		yield return link("Intesting.", "End", null);
 		yield break;
 	}
 
@@ -163,7 +164,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Ever since those kids came back for Christmas break they've been acting real strange, talking about fairies and stuff, hanging around in the old church. They've been driving Gary up the wall! He lives right next to that church. They hang out there drinking and smoking into the dead of night. And I don't mean cigarettes.\" ");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros2.EndDialogue("888888888888888");
+		yield return link("Interesting.", "End", null);
 		yield break;
 	}
 
@@ -181,7 +182,23 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Oh, there's this whole legend that those people like to spread around. Something about some curse from the olden days or something. In my opinion, it's all a bunch of superstition. \"");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros2.EndDialogue("888888888888888");
+		yield return link("Interesting.", "End", null);
+		yield return text(" ");
+		yield break;
+	}
+
+
+	// .............
+	// #7: End
+
+	void passage7_Init()
+	{
+		this.Passages[@"End"] = new StoryPassage(@"End", new string[]{  }, passage7_Main);
+	}
+
+	IStoryThread passage7_Main()
+	{
+		macros2.ChangeScene("Prologue_OverworldMenuSelect");
 		yield break;
 	}
 
