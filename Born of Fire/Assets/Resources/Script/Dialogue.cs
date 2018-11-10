@@ -114,7 +114,7 @@ public class Dialogue : MonoBehaviour {
     }
 
     public void DoLink(StoryLink link) {
-        LinkButton[] links = GetComponentsInChildren<LinkButton>();
+        LinkButton[] links = dialogueContainer.GetComponentsInChildren<LinkButton>();
         for (int i = 0; i < links.Length; i++) {
             if(links[i].live) {
                 QueuedRemoveElement removeAction = new QueuedRemoveElement(links[i].gameObject);

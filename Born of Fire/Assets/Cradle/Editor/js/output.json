@@ -2,18 +2,18 @@
     "console": [
         {
             "type": "message",
-            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:42:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:42:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:42:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:43:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:28:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:28:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:46:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:29:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:29:36747 undefined"
+            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:3712\nt@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:19933\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:40621\nsome@[native code]\napply@[native code]\ncall@[native code]\ncall@[native code]\nCall@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:86:4450\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:86:18801\nr@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:40542\na@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:41837\na@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:45808\ne@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:56837\ne@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:56334\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:89:54045\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:90:486\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:92:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:92:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:92:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:92:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:93:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:76:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/FarmerJamenson.html:76:36747 undefined"
         }
     ],
     "result": {
         "passages": [
             {
-                "Name": "Start",
+                "Name": "Getting his attention.",
                 "Pid": "1",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Here's some DIFFERENT dialogue",
+                        "text": "The old man is too engrossed in looking through the wreckage to notice you.",
                         "type": "text"
                     },
                     {
@@ -21,17 +21,21 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Go Left\",\"Go Left\"",
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Excuse me, sir.\\\" \",\" Greeting\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Go Left\",\"Go Left\")",
+                        "text": "(link-goto:\"\\\"Excuse me, sir.\\\" \",\" Greeting\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Go Left",
-                                "text": "\"Go Left\"",
+                                "innerText": "\\\"Excuse me, sir.\\\" ",
+                                "text": "\"\\\"Excuse me, sir.\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -39,8 +43,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "Go Left",
-                                "text": "\"Go Left\"",
+                                "innerText": " Greeting",
+                                "text": "\" Greeting\"",
                                 "type": "string"
                             }
                         ],
@@ -51,17 +55,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Go Right\",\"Go Right\"",
+                        "innerText": "link-goto:\"\\\"How do you do?\\\"\",\" How I Do\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Go Right\",\"Go Right\")",
+                        "text": "(link-goto:\"\\\"How do you do?\\\"\",\" How I Do\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Go Right",
-                                "text": "\"Go Right\"",
+                                "innerText": "\\\"How do you do?\\\"",
+                                "text": "\"\\\"How do you do?\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -69,8 +73,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "Go Right",
-                                "text": "\"Go Right\"",
+                                "innerText": " How I Do",
+                                "text": "\" How I Do\"",
                                 "type": "string"
                             }
                         ],
@@ -79,12 +83,12 @@
                 ]
             },
             {
-                "Name": "Go Left",
+                "Name": " Greeting",
                 "Pid": "2",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Hop to the left",
+                        "text": "\"What do you want?\"",
                         "type": "text"
                     },
                     {
@@ -92,47 +96,21 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Go Back\",\"Start\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Go Back\",\"Start\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Go Back",
-                                "text": "\"Go Back\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Start",
-                                "text": "\"Start\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"(Stop Talking)\",\"End\"",
+                        "innerText": "link-goto:\"\\\"I am Detective _. I have a few questions about the night of the fire.\\\" \",\" Finally\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"(Stop Talking)\",\"End\")",
+                        "text": "(link-goto:\"\\\"I am Detective _. I have a few questions about the night of the fire.\\\" \",\" Finally\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "(Stop Talking)",
-                                "text": "\"(Stop Talking)\"",
+                                "innerText": "\\\"I am Detective _. I have a few questions about the night of the fire.\\\" ",
+                                "text": "\"\\\"I am Detective _. I have a few questions about the night of the fire.\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -140,8 +118,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "End",
-                                "text": "\"End\"",
+                                "innerText": " Finally",
+                                "text": "\" Finally\"",
                                 "type": "string"
                             }
                         ],
@@ -150,12 +128,12 @@
                 ]
             },
             {
-                "Name": "Go Right",
+                "Name": " How I Do",
                 "Pid": "3",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "And a slide to the right",
+                        "text": "\"How do you think I 'do'? My crops are burned, most of my belongings along with them, and the people responsible are not locked up!\"",
                         "type": "text"
                     },
                     {
@@ -163,47 +141,29 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Go back\",\"Start\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Go back\",\"Start\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Go back",
-                                "text": "\"Go back\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Start",
-                                "text": "\"Start\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
+                        "text": "\"Now what do you want?\"",
+                        "type": "text"
                     },
                     {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"(Stop Talking)\",\"End\"",
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"I am Detective _. I have a few questions about the night of the fire.\\\" \",\" Finally\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"(Stop Talking)\",\"End\")",
+                        "text": "(link-goto:\"\\\"I am Detective _. I have a few questions about the night of the fire.\\\" \",\" Finally\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "(Stop Talking)",
-                                "text": "\"(Stop Talking)\"",
+                                "innerText": "\\\"I am Detective _. I have a few questions about the night of the fire.\\\" ",
+                                "text": "\"\\\"I am Detective _. I have a few questions about the night of the fire.\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -211,8 +171,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "End",
-                                "text": "\"End\"",
+                                "innerText": " Finally",
+                                "text": "\" Finally\"",
                                 "type": "string"
                             }
                         ],
@@ -221,14 +181,901 @@
                 ]
             },
             {
-                "Name": "End",
+                "Name": " Finally",
                 "Pid": "4",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "EndDialogue: \"please\"",
+                        "text": "\"Ah, finally! Someone with sense who can deal out justice. I'm sorry if I come off as a bit crass. It's been a long couple days.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"So what do you know? \",\" Everything!\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"So what do you know? \",\" Everything!\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "So what do you know? ",
+                                "text": "\"So what do you know? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Everything!",
+                                "text": "\" Everything!\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    }
+                ]
+            },
+            {
+                "Name": " Everything!",
+                "Pid": "5",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Everything! I know who's responsible for this mess, even if that lazy Sheriff doesn't want admit it.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Who? \",\" Them College Kids\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Who? \",\" Them College Kids\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Who? ",
+                                "text": "\"Who? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Them College Kids",
+                                "text": "\" Them College Kids\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Lazy Sherrif? \",\" Oh, yeah.\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Lazy Sherrif? \",\" Oh, yeah.\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Lazy Sherrif? ",
+                                "text": "\"Lazy Sherrif? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Oh, yeah.",
+                                "text": "\" Oh, yeah.\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": " Them College Kids",
+                "Pid": "6",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"It was them damn college kids! Back on holiday, I imagine. Every time they're home, they hole up in the old church. Stay up all night. Probably doing drugs, or worse!\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"And they were there the night of the fire?\\\"\",\"They were there.\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"And they were there the night of the fire?\\\"\",\"They were there.\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"And they were there the night of the fire?\\\"",
+                                "text": "\"\\\"And they were there the night of the fire?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "They were there.",
+                                "text": "\"They were there.\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": " Oh, yeah.",
+                "Pid": "7",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Oh, yeah! If he spent as much time doing his job as he does ... this town wouldn't have half the problems it does!\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"That's a bit harsh.\\\" \",\" But true!\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"That's a bit harsh.\\\" \",\" But true!\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"That's a bit harsh.\\\" ",
+                                "text": "\"\\\"That's a bit harsh.\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " But true!",
+                                "text": "\" But true!\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"What other problems does this town have?\\\" \",\" Don't get me started...\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"What other problems does this town have?\\\" \",\" Don't get me started...\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"What other problems does this town have?\\\" ",
+                                "text": "\"\\\"What other problems does this town have?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Don't get me started...",
+                                "text": "\" Don't get me started...\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": " But true!",
+                "Pid": "8",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"But true! \"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"So who do *you* think started the fire?\\\"\",\" Them College Kids\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"So who do *you* think started the fire?\\\"\",\" Them College Kids\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"So who do *you* think started the fire?\\\"",
+                                "text": "\"\\\"So who do *you* think started the fire?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Them College Kids",
+                                "text": "\" Them College Kids\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": " Don't get me started...",
+                "Pid": "9",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Oh, don't even ge me started!\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Okay, back to the case. Who do you think started the fire?\\\"\",\" Them College Kids\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Okay, back to the case. Who do you think started the fire?\\\"\",\" Them College Kids\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Okay, back to the case. Who do you think started the fire?\\\"",
+                                "text": "\"\\\"Okay, back to the case. Who do you think started the fire?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Them College Kids",
+                                "text": "\" Them College Kids\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "They were there.",
+                "Pid": "10",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Yea, they were there alright. Woulda woken me up if I'd been sleepin'. I went over there wit' my Bessie to tell 'em to bug off. \"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Bessie?\\\"\",\"Ma gun.\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Bessie?\\\"\",\"Ma gun.\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Bessie?\\\"",
+                                "text": "\"\\\"Bessie?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Ma gun.",
+                                "text": "\"Ma gun.\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"And did they?\\\"\",\"Saw me coming\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"And did they?\\\"\",\"Saw me coming\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"And did they?\\\"",
+                                "text": "\"\\\"And did they?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Saw me coming",
+                                "text": "\"Saw me coming\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"You weren't sleeping?\\\"\",\"Out for a smoke.\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"You weren't sleeping?\\\"\",\"Out for a smoke.\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"You weren't sleeping?\\\"",
+                                "text": "\"\\\"You weren't sleeping?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Out for a smoke.",
+                                "text": "\"Out for a smoke.\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Saw me coming",
+                "Pid": "11",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Must've seen me comin' 'cause they was already boltin' out the front door afore I was ten paces from the back.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"How long after that did the fire start?\\\"\",\"Dunno\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"How long after that did the fire start?\\\"\",\"Dunno\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"How long after that did the fire start?\\\"",
+                                "text": "\"\\\"How long after that did the fire start?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Dunno",
+                                "text": "\"Dunno\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Ma gun.",
+                "Pid": "12",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "The man gestures to a shotgun resting against one of the remaining walls.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"So what happened?\\\"\",\"Saw me coming\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"So what happened?\\\"\",\"Saw me coming\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"So what happened?\\\"",
+                                "text": "\"\\\"So what happened?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Saw me coming",
+                                "text": "\"Saw me coming\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Out for a smoke.",
+                "Pid": "13",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Out for a midnight smoke. I have insomnia, y'see.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"So what happened?\\\"\",\"Saw me coming\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"So what happened?\\\"\",\"Saw me coming\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"So what happened?\\\"",
+                                "text": "\"\\\"So what happened?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Saw me coming",
+                                "text": "\"Saw me coming\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"So who's Bessie?\\\"\",\"Ma gun.\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"So who's Bessie?\\\"\",\"Ma gun.\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"So who's Bessie?\\\"",
+                                "text": "\"\\\"So who's Bessie?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Ma gun.",
+                                "text": "\"Ma gun.\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Dunno",
+                "Pid": "14",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"I couldn't tell ye. I went back home to get some sleep. Woke up to the smell of smoke.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"If these students left, then why do you think they started the fire?\\\"\",\"Could be anything.\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"If these students left, then why do you think they started the fire?\\\"\",\"Could be anything.\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"If these students left, then why do you think they started the fire?\\\"",
+                                "text": "\"\\\"If these students left, then why do you think they started the fire?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Could be anything.",
+                                "text": "\"Could be anything.\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    }
+                ]
+            },
+            {
+                "Name": "Could be anything.",
+                "Pid": "15",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Mighta jus' dropped whatever they was smokin'. Mighta done it for kicks. How should I know?\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Do you know where I might find these students? Any names, or addresses?\\\"\",\"Info\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Do you know where I might find these students? Any names, or addresses?\\\"\",\"Info\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Do you know where I might find these students? Any names, or addresses?\\\"",
+                                "text": "\"\\\"Do you know where I might find these students? Any names, or addresses?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Info",
+                                "text": "\"Info\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Info",
+                "Pid": "16",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"As a matter o' fact, I do! This ain't the first time I've had to report this bunch. Just the first time they burnt the place to the ground!\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "In quick procession, the old man gives you the names, addresses, and familial relations of each of his susspects.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Thank you for your help. Have a nice day.\\\"\",\"No\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Thank you for your help. Have a nice day.\\\"\",\"No\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Thank you for your help. Have a nice day.\\\"",
+                                "text": "\"\\\"Thank you for your help. Have a nice day.\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "No",
+                                "text": "\"No\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Do you have a place to stay for the night?\\\"\",\"Don't worry\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Do you have a place to stay for the night?\\\"\",\"Don't worry\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Do you have a place to stay for the night?\\\"",
+                                "text": "\"\\\"Do you have a place to stay for the night?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Don't worry",
+                                "text": "\"Don't worry\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "No",
+                "Pid": "17",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"No, thank you! I'll be very happy to see these hooligans behind bars.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Leave\",\"Leave\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Leave\",\"Leave\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Leave",
+                                "text": "\"Leave\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Leave",
+                                "text": "\"Leave\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Don't worry",
+                "Pid": "18",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Don't you worry 'bout me. I've got family all over. One of em'll take me in.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Well, good luck. Thank you for your help.\\\" \",\"No\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Well, good luck. Thank you for your help.\\\" \",\"No\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Well, good luck. Thank you for your help.\\\" ",
+                                "text": "\"\\\"Well, good luck. Thank you for your help.\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "No",
+                                "text": "\"No\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Leave",
+                "Pid": "19",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "EndDialogue: \"End me.\"",
                         "name": "enddialogue",
-                        "text": "(EndDialogue: \"please\")",
+                        "text": "(EndDialogue: \"End me.\")",
                         "tokens": [
                             {
                                 "text": "EndDialogue:",
@@ -239,8 +1086,8 @@
                                 "type": "whitespace"
                             },
                             {
-                                "innerText": "please",
-                                "text": "\"please\"",
+                                "innerText": "End me.",
+                                "text": "\"End me.\"",
                                 "type": "string"
                             }
                         ],
