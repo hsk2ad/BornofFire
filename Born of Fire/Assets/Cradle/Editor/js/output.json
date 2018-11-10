@@ -2,18 +2,18 @@
     "console": [
         {
             "type": "message",
-            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:66:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:66:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:66:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:67:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:52:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:52:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:69:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:70:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:53:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/MeetingTheSheriff.html:53:36747 undefined"
+            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:51:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:51:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:51:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:52:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:37:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:37:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:55:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:38:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:38:36747 undefined"
         }
     ],
     "result": {
         "passages": [
             {
-                "Name": "Arrival",
+                "Name": "Intro",
                 "Pid": "1",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Well, I'll be,\" says the sheriff. \"You must be that investigator from the city. Pleasure to meet you.\"",
+                        "text": "\"Afternoon detective.\"",
                         "type": "text"
                     },
                     {
@@ -25,17 +25,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"Pleasure's all mine.\\\" \",\" Sheriff 1\"",
+                        "innerText": "link-goto:\"\\\"How bad is it?\\\"\",\"Bad\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Pleasure's all mine.\\\" \",\" Sheriff 1\")",
+                        "text": "(link-goto:\"\\\"How bad is it?\\\"\",\"Bad\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Pleasure's all mine.\\\" ",
-                                "text": "\"\\\"Pleasure's all mine.\\\" \"",
+                                "innerText": "\\\"How bad is it?\\\"",
+                                "text": "\"\\\"How bad is it?\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -43,8 +43,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Sheriff 1",
-                                "text": "\" Sheriff 1\"",
+                                "innerText": "Bad",
+                                "text": "\"Bad\"",
                                 "type": "string"
                             }
                         ],
@@ -55,17 +55,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Shake his hand but say nothing. \",\" Sheriff 1\"",
+                        "innerText": "link-goto:\"\\\"Any idea what started it?\\\"\",\"Church\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Shake his hand but say nothing. \",\" Sheriff 1\")",
+                        "text": "(link-goto:\"\\\"Any idea what started it?\\\"\",\"Church\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Shake his hand but say nothing. ",
-                                "text": "\"Shake his hand but say nothing. \"",
+                                "innerText": "\\\"Any idea what started it?\\\"",
+                                "text": "\"\\\"Any idea what started it?\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -73,8 +73,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Sheriff 1",
-                                "text": "\" Sheriff 1\"",
+                                "innerText": "Church",
+                                "text": "\"Church\"",
                                 "type": "string"
                             }
                         ],
@@ -83,12 +83,12 @@
                 ]
             },
             {
-                "Name": " Sheriff 1",
+                "Name": "Bad",
                 "Pid": "2",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Let's get right down to business,\" he says, a sudden change of tone. \"I'm hoping you read that case file we sent over.\"",
+                        "text": "\"Bad. We're lucky it didn't take the whole town. It started in the old church. The wind pushed it across the dry fields, burning down a number of farms. It eventually stopped spreading when the snow started coming down, but by then it had nearly half the town: houses, shops, even the old orphanage.\"",
                         "type": "text"
                     },
                     {
@@ -100,17 +100,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"Sure did. Been a while since I've seen a fire this bad.\\\" \",\" Sheriff 2\"",
+                        "innerText": "link-goto:\"\\\"The church. Any idea what started it?\\\"\",\"No.\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Sure did. Been a while since I've seen a fire this bad.\\\" \",\" Sheriff 2\")",
+                        "text": "(link-goto:\"\\\"The church. Any idea what started it?\\\"\",\"No.\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Sure did. Been a while since I've seen a fire this bad.\\\" ",
-                                "text": "\"\\\"Sure did. Been a while since I've seen a fire this bad.\\\" \"",
+                                "innerText": "\\\"The church. Any idea what started it?\\\"",
+                                "text": "\"\\\"The church. Any idea what started it?\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -118,8 +118,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Sheriff 2",
-                                "text": "\" Sheriff 2\"",
+                                "innerText": "No.",
+                                "text": "\"No.\"",
                                 "type": "string"
                             }
                         ],
@@ -128,12 +128,12 @@
                 ]
             },
             {
-                "Name": " Sheriff 2",
+                "Name": "Church",
                 "Pid": "3",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"That's no surprise,\" he coughs roughly. \"Firefighters could hardly keep the damn thing from scorching the town to oblivion. But they did, thank the lord. Good men, they are. Glad none of them got hurt in the whole ordeal.\"",
+                        "text": "It started in the old church. The wind pushed it across the dry fields, all the way into town. We got off lucky.",
                         "type": "text"
                     },
                     {
@@ -145,17 +145,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"The case file didn't list a reason for the fire. Any clue what could have started it?\\\" \",\" Sheriff 3\"",
+                        "innerText": "link-goto:\"\\\"Any idea what started it?\\\"\",\"No.\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"The case file didn't list a reason for the fire. Any clue what could have started it?\\\" \",\" Sheriff 3\")",
+                        "text": "(link-goto:\"\\\"Any idea what started it?\\\"\",\"No.\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"The case file didn't list a reason for the fire. Any clue what could have started it?\\\" ",
-                                "text": "\"\\\"The case file didn't list a reason for the fire. Any clue what could have started it?\\\" \"",
+                                "innerText": "\\\"Any idea what started it?\\\"",
+                                "text": "\"\\\"Any idea what started it?\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -163,8 +163,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Sheriff 3",
-                                "text": "\" Sheriff 3\"",
+                                "innerText": "No.",
+                                "text": "\"No.\"",
                                 "type": "string"
                             }
                         ],
@@ -173,12 +173,12 @@
                 ]
             },
             {
-                "Name": " Sheriff 3",
+                "Name": "No.",
                 "Pid": "4",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "The sheriff rolls his eyes.",
+                        "text": "\"We don't know much yet. The church has been abandoned for decades. We have a newer one built closer to town. We know it's not an eletrical fire because the building never had any electricity. It had an antebellum gas lighting system, but that should have been disconnected long ago.\"",
                         "type": "text"
                     },
                     {
@@ -190,29 +190,17 @@
                         "type": "br"
                     },
                     {
-                        "text": "\"Oh, we have some leads,\" he laughs. \"Old Gary is at it again, claiming some college kids burned down the church on his land and started the whole fire. Threatening to sue and have them locked up for life. Typical Gary.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Do you think these college kids did it?\\\" \",\" Sheriff 4\"",
+                        "innerText": "link-goto:\"\\\"Is there any chance it wasn't?\\\"\",\"Maybe\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Do you think these college kids did it?\\\" \",\" Sheriff 4\")",
+                        "text": "(link-goto:\"\\\"Is there any chance it wasn't?\\\"\",\"Maybe\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Do you think these college kids did it?\\\" ",
-                                "text": "\"\\\"Do you think these college kids did it?\\\" \"",
+                                "innerText": "\\\"Is there any chance it wasn't?\\\"",
+                                "text": "\"\\\"Is there any chance it wasn't?\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -220,8 +208,68 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Sheriff 4",
-                                "text": "\" Sheriff 4\"",
+                                "innerText": "Maybe",
+                                "text": "\"Maybe\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Keep me updated. Tell me if you find anything near the scene.\\\"\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Keep me updated. Tell me if you find anything near the scene.\\\"\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Keep me updated. Tell me if you find anything near the scene.\\\"",
+                                "text": "\"\\\"Keep me updated. Tell me if you find anything near the scene.\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "End",
+                                "text": "\"End\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Why was the church abandoned?\\\"\",\"TalkTo\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Why was the church abandoned?\\\"\",\"TalkTo\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Why was the church abandoned?\\\"",
+                                "text": "\"\\\"Why was the church abandoned?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "TalkTo",
+                                "text": "\"TalkTo\"",
                                 "type": "string"
                             }
                         ],
@@ -230,251 +278,14 @@
                 ]
             },
             {
-                "Name": " Sheriff 4",
+                "Name": "End",
                 "Pid": "5",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Hard to say what I believe,\" he says after a brief moment. \"Don't get me wrong, I always take whatever Old Gary says with a hint of salt, but this time it seems more plausible than usual...\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "The sheriff is suddenly silent, as if deep in thought.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"Anyways,\" he continues, \"a gas leak is the most likely cause of the fire. Or that's what the firefighters told me, at least. They said a leak under the orphanage lit the whole place up like a candle.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"So the fire started at the orphanage? Or the church?\\\" \",\" Sheriff 5\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"So the fire started at the orphanage? Or the church?\\\" \",\" Sheriff 5\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"So the fire started at the orphanage? Or the church?\\\" ",
-                                "text": "\"\\\"So the fire started at the orphanage? Or the church?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Sheriff 5",
-                                "text": "\" Sheriff 5\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Sheriff 5",
-                "Pid": "6",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"We're not sure exactly,\" he says, a little annoyed. \"We've been a little busy with rebuilding and making sure the people who lost their homes aren't out on the streets this winter. My apologies if we haven't solved your case for you yet.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "Things are a bit tense now, and you decide it best to change the topic.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"I'll start on the case in a bit. Know where someone can find a decent meal in this town?\\\" \",\" Sheriff 6\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"I'll start on the case in a bit. Know where someone can find a decent meal in this town?\\\" \",\" Sheriff 6\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"I'll start on the case in a bit. Know where someone can find a decent meal in this town?\\\" ",
-                                "text": "\"\\\"I'll start on the case in a bit. Know where someone can find a decent meal in this town?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Sheriff 6",
-                                "text": "\" Sheriff 6\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Is there anyone else I can ask for information on the fire?\\\" \",\" Sheriff 6\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Is there anyone else I can ask for information on the fire?\\\" \",\" Sheriff 6\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Is there anyone else I can ask for information on the fire?\\\" ",
-                                "text": "\"\\\"Is there anyone else I can ask for information on the fire?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Sheriff 6",
-                                "text": "\" Sheriff 6\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Sheriff 6",
-                "Pid": "7",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"The diner isn't a bad place to be,\" the sheriff says, \"whether you're looking for food or rumors. It's across the street from the station. I can have an officer show you down there, if you'd like.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"I'll be alright, thanks.\\\" \",\" Sheriff 7\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"I'll be alright, thanks.\\\" \",\" Sheriff 7\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"I'll be alright, thanks.\\\" ",
-                                "text": "\"\\\"I'll be alright, thanks.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Sheriff 7",
-                                "text": "\" Sheriff 7\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " Sheriff 7",
-                "Pid": "8",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Take care of yourself,\" he says with a nod and a pat on the shoulder. \"Things in this town haven't been the same since the fire, and I can't quite explain it, but...\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "The sheriff trails off.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\"Take care of yourself,\" he repeats.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "EndDialogue: \" \"",
+                        "innerText": "EndDialogue: \"420\"",
                         "name": "enddialogue",
-                        "text": "(EndDialogue: \" \")",
+                        "text": "(EndDialogue: \"420\")",
                         "tokens": [
                             {
                                 "text": "EndDialogue:",
@@ -485,12 +296,23 @@
                                 "type": "whitespace"
                             },
                             {
-                                "innerText": " ",
-                                "text": "\" \"",
+                                "innerText": "420",
+                                "text": "\"420\"",
                                 "type": "string"
                             }
                         ],
                         "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "TalkTo",
+                "Pid": "6",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Asthbestos, I think. It was be fore my time. Pastor Mike probably knows more.",
+                        "type": "text"
                     },
                     {
                         "text": "\n",
@@ -499,6 +321,77 @@
                     {
                         "text": "\n",
                         "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Huh. Keep me updated. Tell me if you find anything in the old church.\\\"\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Huh. Keep me updated. Tell me if you find anything in the old church.\\\"\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Huh. Keep me updated. Tell me if you find anything in the old church.\\\"",
+                                "text": "\"\\\"Huh. Keep me updated. Tell me if you find anything in the old church.\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "End",
+                                "text": "\"End\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Maybe",
+                "Pid": "7",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Maybe. It seems unlikely, but if it wasn't a gas leak would be entirely plausible. I'll check the records. Someone must have inspected the building at some point.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Keep me updated. Tell me if you find anything.\\\"\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Keep me updated. Tell me if you find anything.\\\"\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Keep me updated. Tell me if you find anything.\\\"",
+                                "text": "\"\\\"Keep me updated. Tell me if you find anything.\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "End",
+                                "text": "\"End\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             }

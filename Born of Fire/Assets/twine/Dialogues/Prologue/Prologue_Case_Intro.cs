@@ -55,6 +55,7 @@ public partial class @Prologue_Case_Intro: Cradle.StoryFormats.Harlowe.HarloweSt
 		passage1_Init();
 		passage2_Init();
 		passage3_Init();
+		passage4_Init();
 	}
 
 	// ---------------
@@ -118,10 +119,23 @@ public partial class @Prologue_Case_Intro: Cradle.StoryFormats.Harlowe.HarloweSt
 		yield return text("8 AM departure, tomorrow. ");
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return text("Better head home and get some shut-eye. ");
-		yield return lineBreak();
-		yield return lineBreak();
-		macros2.EndDialogue(" ");
+		yield return link("Better head home and get some shut-eye.", "End", null);
+		yield return text(" ");
+		yield break;
+	}
+
+
+	// .............
+	// #4: End
+
+	void passage4_Init()
+	{
+		this.Passages[@"End"] = new StoryPassage(@"End", new string[]{  }, passage4_Main);
+	}
+
+	IStoryThread passage4_Main()
+	{
+		macros2.ChangeScene("Prologue_SherrifScene1");
 		yield break;
 	}
 

@@ -261,7 +261,7 @@ class QueuedRemoveElements : QueuedAction {
 class QueuedEnding : QueuedAction {
     public override IEnumerator PerformAction(Dialogue d) {
         Debug.Log("Ending!");
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.8f);
         d.CloseDialogueWindow();
         yield return null;
     }

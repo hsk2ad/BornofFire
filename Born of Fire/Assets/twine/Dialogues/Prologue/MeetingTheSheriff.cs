@@ -60,6 +60,7 @@ public partial class @MeetingTheSheriff: Cradle.StoryFormats.Harlowe.HarloweStor
 		passage6_Init();
 		passage7_Init();
 		passage8_Init();
+		passage9_Init();
 	}
 
 	// ---------------
@@ -226,9 +227,22 @@ public partial class @MeetingTheSheriff: Cradle.StoryFormats.Harlowe.HarloweStor
 		yield return text("\"Take care of yourself,\" he repeats.");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros2.EndDialogue(" ");
-		yield return lineBreak();
-		yield return lineBreak();
+		yield return link("Leave, and take care.", "End", null);
+		yield break;
+	}
+
+
+	// .............
+	// #9: End
+
+	void passage9_Init()
+	{
+		this.Passages[@"End"] = new StoryPassage(@"End", new string[]{  }, passage9_Main);
+	}
+
+	IStoryThread passage9_Main()
+	{
+		macros2.EndDialogue("Thank you");
 		yield break;
 	}
 
