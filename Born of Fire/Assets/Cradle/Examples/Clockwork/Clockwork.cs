@@ -86,7 +86,6 @@ public partial class @Clockwork: Cradle.StoryFormats.Harlowe.HarloweStory
 	// ---------------
 
 	public readonly Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros macros1;
-	public readonly DialogueEnder macros2;
 
 	@Clockwork()
 	{
@@ -95,7 +94,6 @@ public partial class @Clockwork: Cradle.StoryFormats.Harlowe.HarloweStory
 		base.Vars = new VarDefs() { Story = this, StrictMode = true };
 
 		macros1 = new Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros() { Story = this };
-		macros2 = new DialogueEnder() { Story = this };
 
 		base.Init();
 		passage1_Init();
