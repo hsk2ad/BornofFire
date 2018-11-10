@@ -62,6 +62,7 @@ public partial class @PastorMike: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage8_Init();
 		passage9_Init();
 		passage10_Init();
+		passage11_Init();
 	}
 
 	// ---------------
@@ -158,7 +159,7 @@ public partial class @PastorMike: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Well go ahead. Just keep in mind that these people have been through something traumatic, so choose you words wisely.\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros2.EndDialogue("Harder, Daddy!");
+		yield return link(">", "End", null);
 		yield break;
 	}
 
@@ -214,7 +215,7 @@ public partial class @PastorMike: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Even if one of the pipes broke open, there wouldn't be any gas to leak out.\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros2.EndDialogue("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		yield return link(">", "End", null);
 		yield break;
 	}
 
@@ -252,7 +253,22 @@ public partial class @PastorMike: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Every town has its stories. We've had other fires, and other tragedies. The locals sometimes talk about the town being \"cursed\", but it's all just superstition, I assure you.\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros2.EndDialogue("Coswallop in my opinion!");
+		yield return link(">", "End", null);
+		yield break;
+	}
+
+
+	// .............
+	// #11: End
+
+	void passage11_Init()
+	{
+		this.Passages[@"End"] = new StoryPassage(@"End", new string[]{  }, passage11_Main);
+	}
+
+	IStoryThread passage11_Main()
+	{
+		macros2.EndDialogue("Harder Daddy");
 		yield break;
 	}
 

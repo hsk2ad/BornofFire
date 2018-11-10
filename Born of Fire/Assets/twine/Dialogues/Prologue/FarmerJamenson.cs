@@ -71,6 +71,7 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage17_Init();
 		passage18_Init();
 		passage19_Init();
+		passage20_Init();
 	}
 
 	// ---------------
@@ -401,7 +402,9 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"No, thank you! I'll be very happy to see these hooligans behind bars.\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return link("Leave", "Leave", null);
+		yield return link("Investigate Further", "Leave", null);
+		yield return lineBreak();
+		yield return link("Investigate Elsewhere", "End", null);
 		yield break;
 	}
 
@@ -434,7 +437,22 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage19_Main()
 	{
-		macros2.EndDialogue("End me.");
+		macros2.ChangeScene("Demo_End");
+		yield break;
+	}
+
+
+	// .............
+	// #20: End
+
+	void passage20_Init()
+	{
+		this.Passages[@"End"] = new StoryPassage(@"End", new string[]{  }, passage20_Main);
+	}
+
+	IStoryThread passage20_Main()
+	{
+		macros2.EndDialogue("Blease");
 		yield break;
 	}
 
