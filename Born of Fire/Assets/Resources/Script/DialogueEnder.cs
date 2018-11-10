@@ -9,4 +9,9 @@ public class DialogueEnder : RuntimeMacros {
     public void EndDialogue(string blah) {
         this.Story.SendMessage("EndDialogue");
     }
+
+    [RuntimeMacro]
+    public void ChangeScene(string newSceneName) {
+        SceneTransition.GoToScene(newSceneName);
+    }
 }

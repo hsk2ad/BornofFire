@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f479f8c2c23da4c3ba058842db50f2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToGoTo: SampleScene
+  ToGoTo: Prologue_CaseIntro
 --- !u!1 &1202101199
 GameObject:
   m_ObjectHideFlags: 0
