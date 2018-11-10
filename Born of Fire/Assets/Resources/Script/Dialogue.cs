@@ -16,6 +16,8 @@ public class Dialogue : MonoBehaviour {
     public GameObject linebreakTemplate;
     public GameObject spacerTemplate;
 
+    public GameObject dialogueHolder;
+
     public GameObject dialogueContainer;
 
     public ScrollRect consoleScroll;
@@ -25,7 +27,7 @@ public class Dialogue : MonoBehaviour {
 
     bool scrolling;
 
-    bool open;
+    public bool open;
 
     Queue<QueuedAction> queue;
 #endregion
@@ -50,9 +52,9 @@ public class Dialogue : MonoBehaviour {
         }
 
         if (dialogueContainer == null || consoleScroll == null) {
-            GameObject holder = GameObject.Find("DialogueHolder");
-            dialogueContainer = holder.transform.GetChild(0).gameObject;
-            consoleScroll = holder.GetComponent<ScrollRect>();
+            //dialogueHolder = GameObject.Find("DialogueHolder");
+            dialogueContainer = dialogueHolder.transform.GetChild(0).gameObject;
+            consoleScroll = dialogueHolder.GetComponent<ScrollRect>();
         }
         story.OnOutput += Display;
 
@@ -96,14 +98,17 @@ public class Dialogue : MonoBehaviour {
         dialogueContainer.transform.DetachChildren();
         GameObject spacer = Instantiate(spacerTemplate) as GameObject;
         spacer.transform.SetParent(dialogueContainer.transform);
-        dialogueContainer.SetActive(false);
+        //dialogueContainer.SetActive(false);
+        dialogueHolder.SetActive(false);
         story.Reset();
         open = false;
     }
 
     public void OpenDialogueWindow() {
+        Debug.Log("start");
         if (open) return;
-        dialogueContainer.SetActive(true);
+        dialogueHolder.SetActive(true);
+        //dialogueContainer.SetActive(true);
         story.Begin();
         open = true;
     }
@@ -250,6 +255,7 @@ class QueuedRemoveElement : QueuedAction {
 class QueuedEnding : QueuedAction {
     public override IEnumerator PerformAction(Dialogue d) {
         Debug.Log("Ending!");
+        yield return new WaitForSeconds(0.1f);
         d.CloseDialogueWindow();
         yield return null;
     }

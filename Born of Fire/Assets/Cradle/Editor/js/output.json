@@ -2,7 +2,7 @@
     "console": [
         {
             "type": "message",
-            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:42:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:42:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:42:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:43:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:28:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:28:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:45:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:46:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:29:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_M3.html:29:36747 undefined"
+            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:42:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:42:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:42:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:43:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:28:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:28:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:45:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:46:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:29:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Test_Different.html:29:36747 undefined"
         }
     ],
     "result": {
@@ -13,7 +13,7 @@
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Here's some dialogue",
+                        "text": "Here's some DIFFERENT dialogue",
                         "type": "text"
                     },
                     {
