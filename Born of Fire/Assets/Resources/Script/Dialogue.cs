@@ -115,12 +115,14 @@ public class Dialogue : MonoBehaviour {
 
     public void DoLink(StoryLink link) {
         LinkButton[] links = dialogueContainer.GetComponentsInChildren<LinkButton>();
+        List<GameObject> toRemove = new List<GameObject>();
         for (int i = 0; i < links.Length; i++) {
             if(links[i].live) {
-                QueuedRemoveElement removeAction = new QueuedRemoveElement(links[i].gameObject);
-                queue.Enqueue(removeAction);
+                toRemove.Add(links[i].gameObject);
+                //queue.Enqueue(removeAction);
             }
         }
+        queue.Enqueue(new QueuedRemoveElements(toRemove));
         this.story.DoLink(link);
     }
 
@@ -238,17 +240,21 @@ class QueuedDisplayLink : QueuedAction {
     }
 }
 
-class QueuedRemoveElement : QueuedAction {
-    public GameObject toDelete;
+class QueuedRemoveElements : QueuedAction {
+    public List<GameObject> toDelete;
 
-    public QueuedRemoveElement(GameObject _toDelete) {
+    public QueuedRemoveElements(List<GameObject> _toDelete) {
         toDelete = _toDelete;
     }
 
     public override IEnumerator PerformAction(Dialogue d) {
-        toDelete.SetActive(false);
+        foreach(GameObject obj in toDelete) {
+            obj.SetActive(false);
+        }
         yield return d.StartCoroutine(d.ScrollToBottom());
-        GameObject.Destroy(toDelete);
+        foreach(GameObject obj in toDelete) {
+            GameObject.Destroy(obj);
+        }
     }
 }
 
