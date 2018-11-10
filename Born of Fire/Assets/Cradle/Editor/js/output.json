@@ -1,19 +1,14 @@
 {
-    "console": [
-        {
-            "type": "message",
-            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:51:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:51:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:51:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:52:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:37:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:37:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:54:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:55:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:38:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Fireman.html:38:36747 undefined"
-        }
-    ],
+    "console": [],
     "result": {
         "passages": [
             {
-                "Name": "Intro",
+                "Name": "Case File",
                 "Pid": "1",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Afternoon detective.\"",
+                        "text": "The office is dark. Once again, you're the last one at work. Not that you mind that: it was easier to work when you had to whole place to yourself.",
                         "type": "text"
                     },
                     {
@@ -25,47 +20,29 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"How bad is it?\\\"\",\"Bad\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"How bad is it?\\\"\",\"Bad\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"How bad is it?\\\"",
-                                "text": "\"\\\"How bad is it?\\\"\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Bad",
-                                "text": "\"Bad\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
+                        "text": "A lone case file lies on your desk. You haven't had time to look over it yet, but you know it has to be important when the boss personally came to your desk to deliver it. The Christmas season was always a busy time for insurance investigators, and this was just one more log on the fire...",
+                        "type": "text"
                     },
                     {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"Any idea what started it?\\\"\",\"Church\"",
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Open the file. \",\" Case File 2\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Any idea what started it?\\\"\",\"Church\")",
+                        "text": "(link-goto:\"Open the file. \",\" Case File 2\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Any idea what started it?\\\"",
-                                "text": "\"\\\"Any idea what started it?\\\"\"",
+                                "innerText": "Open the file. ",
+                                "text": "\"Open the file. \"",
                                 "type": "string"
                             },
                             {
@@ -73,8 +50,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "Church",
-                                "text": "\"Church\"",
+                                "innerText": " Case File 2",
+                                "text": "\" Case File 2\"",
                                 "type": "string"
                             }
                         ],
@@ -83,12 +60,12 @@
                 ]
             },
             {
-                "Name": "Bad",
+                "Name": " Case File 2",
                 "Pid": "2",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"Bad. We're lucky it didn't take the whole town. It started in the old church. The wind pushed it across the dry fields, burning down a number of farms. It eventually stopped spreading when the snow started coming down, but by then it had nearly half the town: houses, shops, even the old orphanage.\"",
+                        "text": "The case seems simple enough. Fire in a rural town, out in the boondocks. Hopefully it would be a quick visit.",
                         "type": "text"
                     },
                     {
@@ -100,17 +77,41 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"The church. Any idea what started it?\\\"\",\"No.\"",
+                        "text": "Some small details on the case file eventually come to your attention, however. No official cause for the fire. Entire sections of the town burned to a crisp. Reports of missing children.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Suddenly, things were looking a bit more interesting.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Check the plane ticket. \",\" Case File 3\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"The church. Any idea what started it?\\\"\",\"No.\")",
+                        "text": "(link-goto:\"Check the plane ticket. \",\" Case File 3\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"The church. Any idea what started it?\\\"",
-                                "text": "\"\\\"The church. Any idea what started it?\\\"\"",
+                                "innerText": "Check the plane ticket. ",
+                                "text": "\"Check the plane ticket. \"",
                                 "type": "string"
                             },
                             {
@@ -118,8 +119,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "No.",
-                                "text": "\"No.\"",
+                                "innerText": " Case File 3",
+                                "text": "\" Case File 3\"",
                                 "type": "string"
                             }
                         ],
@@ -128,12 +129,12 @@
                 ]
             },
             {
-                "Name": "Church",
+                "Name": " Case File 3",
                 "Pid": "3",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "It started in the old church. The wind pushed it across the dry fields, all the way into town. We got off lucky.",
+                        "text": "8 AM departure, tomorrow. ",
                         "type": "text"
                     },
                     {
@@ -145,92 +146,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"Any idea what started it?\\\"\",\"No.\"",
+                        "innerText": "link-goto:\"Better head home and get some shut-eye.\",\"End\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Any idea what started it?\\\"\",\"No.\")",
+                        "text": "(link-goto:\"Better head home and get some shut-eye.\",\"End\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Any idea what started it?\\\"",
-                                "text": "\"\\\"Any idea what started it?\\\"\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "No.",
-                                "text": "\"No.\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "No.",
-                "Pid": "4",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"We don't know much yet. The church has been abandoned for decades. We have a newer one built closer to town. We know it's not an eletrical fire because the building never had any electricity. It had an antebellum gas lighting system, but that should have been disconnected long ago.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Is there any chance it wasn't?\\\"\",\"Maybe\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Is there any chance it wasn't?\\\"\",\"Maybe\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Is there any chance it wasn't?\\\"",
-                                "text": "\"\\\"Is there any chance it wasn't?\\\"\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Maybe",
-                                "text": "\"Maybe\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Keep me updated. Tell me if you find anything near the scene.\\\"\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Keep me updated. Tell me if you find anything near the scene.\\\"\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Keep me updated. Tell me if you find anything near the scene.\\\"",
-                                "text": "\"\\\"Keep me updated. Tell me if you find anything near the scene.\\\"\"",
+                                "innerText": "Better head home and get some shut-eye.",
+                                "text": "\"Better head home and get some shut-eye.\"",
                                 "type": "string"
                             },
                             {
@@ -246,148 +172,28 @@
                         "type": "macro"
                     },
                     {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Why was the church abandoned?\\\"\",\"TalkTo\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Why was the church abandoned?\\\"\",\"TalkTo\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Why was the church abandoned?\\\"",
-                                "text": "\"\\\"Why was the church abandoned?\\\"\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "TalkTo",
-                                "text": "\"TalkTo\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
+                        "text": " ",
+                        "type": "text"
                     }
                 ]
             },
             {
                 "Name": "End",
-                "Pid": "5",
+                "Pid": "4",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "EndDialogue: \"420\"",
-                        "name": "enddialogue",
-                        "text": "(EndDialogue: \"420\")",
+                        "innerText": "ChangeScene:\"Prologue_SherrifScene1\"",
+                        "name": "changescene",
+                        "text": "(ChangeScene:\"Prologue_SherrifScene1\")",
                         "tokens": [
                             {
-                                "text": "EndDialogue:",
+                                "text": "ChangeScene:",
                                 "type": "macroName"
                             },
                             {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "innerText": "420",
-                                "text": "\"420\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "TalkTo",
-                "Pid": "6",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "Asthbestos, I think. It was be fore my time. Pastor Mike probably knows more.",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Huh. Keep me updated. Tell me if you find anything in the old church.\\\"\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Huh. Keep me updated. Tell me if you find anything in the old church.\\\"\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Huh. Keep me updated. Tell me if you find anything in the old church.\\\"",
-                                "text": "\"\\\"Huh. Keep me updated. Tell me if you find anything in the old church.\\\"\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "Maybe",
-                "Pid": "7",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Maybe. It seems unlikely, but if it wasn't a gas leak would be entirely plausible. I'll check the records. Someone must have inspected the building at some point.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Keep me updated. Tell me if you find anything.\\\"\",\"End\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Keep me updated. Tell me if you find anything.\\\"\",\"End\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Keep me updated. Tell me if you find anything.\\\"",
-                                "text": "\"\\\"Keep me updated. Tell me if you find anything.\\\"\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "End",
-                                "text": "\"End\"",
+                                "innerText": "Prologue_SherrifScene1",
+                                "text": "\"Prologue_SherrifScene1\"",
                                 "type": "string"
                             }
                         ],
