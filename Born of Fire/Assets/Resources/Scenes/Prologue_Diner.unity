@@ -484,9 +484,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1771939428}
-  - component: {fileID: 1771939427}
   - component: {fileID: 1771939426}
   - component: {fileID: 1771939425}
+  - component: {fileID: 1771939427}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1771939424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ffba4134db67994596752e727d2b70f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dc77f004a00f4fbf80fd9071f9e7c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AutoPlay: 0
