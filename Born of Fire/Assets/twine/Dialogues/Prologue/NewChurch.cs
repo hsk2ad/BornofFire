@@ -68,6 +68,8 @@ public partial class @NewChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage14_Init();
 		passage15_Init();
 		passage16_Init();
+		passage17_Init();
+		passage18_Init();
 	}
 
 	// ---------------
@@ -213,8 +215,6 @@ public partial class @NewChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("Maybe they think you're an Evangelist.");
 		yield return lineBreak();
 		yield return link("\"Do you know anything about the recent fire?\"", "Polite", null);
-		yield return lineBreak();
-		yield return link("\"Open the damn door before I kick it down myself.\"", "Rude", null);
 		yield break;
 	}
 
@@ -229,90 +229,30 @@ public partial class @NewChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage8_Main()
 	{
-		yield return text("\"Yes. It was hot. Now fuck off.\"");
+		yield return text("The door opens, and a woman greets you with a sullen stare.");
 		yield return lineBreak();
-		yield return text("How rude. This woman has a pretty short temper.");
+		yield return text("\"I apologize for my rudeness. The past few months have been hard on");
 		yield return lineBreak();
-		yield return link("Try saying something else.", "Talk", null);
+		yield return text("all of us.\"");
+		yield return lineBreak();
+		yield return link("\"I understand. What can you tell me?\"", "WomanZero", null);
 		yield break;
 	}
 
 
 	// .............
-	// #9: Rude
+	// #9: GreetMan
 
 	void passage9_Init()
 	{
-		this.Passages[@"Rude"] = new StoryPassage(@"Rude", new string[]{  }, passage9_Main);
+		this.Passages[@"GreetMan"] = new StoryPassage(@"GreetMan", new string[]{  }, passage9_Main);
 	}
 
 	IStoryThread passage9_Main()
 	{
-		yield return text("As soon as those words leave your mouth, the door flies open,");
+		yield return text("As you turn to leave, a man stops you and offers you a handshake.");
 		yield return lineBreak();
-		yield return text("and you're greeted with the angry face of a middle-aged woman.");
-		yield return lineBreak();
-		yield return text("Her eyes are burning with a cold, fiery malice.");
-		yield return lineBreak();
-		yield return link("Steel yourself for a possible fight.", "PrepareFight", null);
-		yield break;
-	}
-
-
-	// .............
-	// #10: PrepareFight
-
-	void passage10_Init()
-	{
-		this.Passages[@"PrepareFight"] = new StoryPassage(@"PrepareFight", new string[]{  }, passage10_Main);
-	}
-
-	IStoryThread passage10_Main()
-	{
-		yield return text("You're ready to start throwing hands,");
-		yield return lineBreak();
-		yield return text("when a second head pops into the doorframe.");
-		yield return lineBreak();
-		yield return text("A man, the striking image of a typical white-collar American,");
-		yield return lineBreak();
-		yield return text("steps into view and casts you a worried look.");
-		yield return lineBreak();
-		yield return text("He steps in between you and the woman and smiles sympathetically.");
-		yield return lineBreak();
-		yield return text("\"Forgive us. My wife has had a tiring day, and was just");
-		yield return lineBreak();
-		yield return text("preparing to get some much needed rest. Isn't that right, dear?\"");
-		yield return lineBreak();
-		yield return text("The woman, her expression softening slightly, perhaps because");
-		yield return lineBreak();
-		yield return text("of the presence of her husband, casts you a dark but tired glare");
-		yield return lineBreak();
-		yield return text("before retreating into her home.");
-		yield return lineBreak();
-		yield return link("Greet the man.", "GreetMan", null);
-		yield return lineBreak();
-		yield return link("Apologize and leave.", "End", null);
-		yield break;
-	}
-
-
-	// .............
-	// #11: GreetMan
-
-	void passage11_Init()
-	{
-		this.Passages[@"GreetMan"] = new StoryPassage(@"GreetMan", new string[]{  }, passage11_Main);
-	}
-
-	IStoryThread passage11_Main()
-	{
-		yield return text("The man smiles again.");
-		yield return lineBreak();
-		yield return text("\"I apologize for the scare.");
-		yield return lineBreak();
-		yield return text("We've had a rather... troubling time.\"");
-		yield return lineBreak();
-		yield return text("How do you respond?");
+		yield return text("\"Hello, I'm her husband. I understand you're here to help out our town.\"");
 		yield return lineBreak();
 		yield return link("\"The sheriff send me here. He told me you were one of the first people to see the fire break out that night.\"", "SheriffSent", null);
 		yield return lineBreak();
@@ -322,31 +262,31 @@ public partial class @NewChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 
 
 	// .............
-	// #12: SheriffSent
+	// #10: SheriffSent
 
-	void passage12_Init()
+	void passage10_Init()
 	{
-		this.Passages[@"SheriffSent"] = new StoryPassage(@"SheriffSent", new string[]{  }, passage12_Main);
+		this.Passages[@"SheriffSent"] = new StoryPassage(@"SheriffSent", new string[]{  }, passage10_Main);
 	}
 
-	IStoryThread passage12_Main()
+	IStoryThread passage10_Main()
 	{
 		yield return text("\"He told you right. What do you want to know?\"");
 		yield return lineBreak();
-		yield return link("\"Well... let's start with...", "Questions", null);
+		yield return link("\"Well... let's start with...\"", "Questions", null);
 		yield break;
 	}
 
 
 	// .............
-	// #13: Questions
+	// #11: Questions
 
-	void passage13_Init()
+	void passage11_Init()
 	{
-		this.Passages[@"Questions"] = new StoryPassage(@"Questions", new string[]{  }, passage13_Main);
+		this.Passages[@"Questions"] = new StoryPassage(@"Questions", new string[]{  }, passage11_Main);
 	}
 
-	IStoryThread passage13_Main()
+	IStoryThread passage11_Main()
 	{
 		yield return link("\"Where were you that night?\"", "Where", null);
 		yield return lineBreak();
@@ -356,38 +296,32 @@ public partial class @NewChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 
 
 	// .............
-	// #14: SorryBother
+	// #12: SorryBother
 
-	void passage14_Init()
+	void passage12_Init()
 	{
-		this.Passages[@"SorryBother"] = new StoryPassage(@"SorryBother", new string[]{  }, passage14_Main);
+		this.Passages[@"SorryBother"] = new StoryPassage(@"SorryBother", new string[]{  }, passage12_Main);
 	}
 
-	IStoryThread passage14_Main()
+	IStoryThread passage12_Main()
 	{
-		yield return text("\"Not a problem. Although,");
+		yield return text("\"Not a problem. I'm happy to help.\"");
 		yield return lineBreak();
-		yield return text("I'd appreciate it if you didn't threaten");
-		yield return lineBreak();
-		yield return text("to kick down the door of our brand new church.");
-		yield return lineBreak();
-		yield return text("The draft in the house is bad enough as it is. But ask away.\"");
-		yield return lineBreak();
-		yield return link("\"Well... Let's start with...", "Questions", null);
+		yield return link("\"Well... Let's start with...\"", "Questions", null);
 		yield return text(" ");
 		yield break;
 	}
 
 
 	// .............
-	// #15: Where
+	// #13: Where
 
-	void passage15_Init()
+	void passage13_Init()
 	{
-		this.Passages[@"Where"] = new StoryPassage(@"Where", new string[]{  }, passage15_Main);
+		this.Passages[@"Where"] = new StoryPassage(@"Where", new string[]{  }, passage13_Main);
 	}
 
-	IStoryThread passage15_Main()
+	IStoryThread passage13_Main()
 	{
 		yield return text("“My wife and I were out at the bar in town,");
 		yield return lineBreak();
@@ -403,14 +337,14 @@ public partial class @NewChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 
 
 	// .............
-	// #16: Suspicious
+	// #14: Suspicious
 
-	void passage16_Init()
+	void passage14_Init()
 	{
-		this.Passages[@"Suspicious"] = new StoryPassage(@"Suspicious", new string[]{  }, passage16_Main);
+		this.Passages[@"Suspicious"] = new StoryPassage(@"Suspicious", new string[]{  }, passage14_Main);
 	}
 
-	IStoryThread passage16_Main()
+	IStoryThread passage14_Main()
 	{
 		yield return text("\"Now that you mention it, Pastor Nick was strangely absent on that night.");
 		yield return lineBreak();
@@ -418,6 +352,102 @@ public partial class @NewChurch: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("New lead: Old church", "End", null);
 		yield return text(" ");
+		yield break;
+	}
+
+
+	// .............
+	// #15: WomanZero
+
+	void passage15_Init()
+	{
+		this.Passages[@"WomanZero"] = new StoryPassage(@"WomanZero", new string[]{  }, passage15_Main);
+	}
+
+	IStoryThread passage15_Main()
+	{
+		yield return text("Well, what would you like to know?");
+		yield return lineBreak();
+		yield return link("\"I understand your house was one of the first to go.\"", "WomanA", null);
+		yield return lineBreak();
+		yield return link("\"What were you doing on that night?\"", "WomanB", null);
+		yield return lineBreak();
+		yield return link("\"Did you notice anything suspicious?\"", "WomanC", null);
+		yield break;
+	}
+
+
+	// .............
+	// #16: WomanA
+
+	void passage16_Init()
+	{
+		this.Passages[@"WomanA"] = new StoryPassage(@"WomanA", new string[]{  }, passage16_Main);
+	}
+
+	IStoryThread passage16_Main()
+	{
+		yield return text("Yes, my husband and I lost everything that night. Everything");
+		yield return lineBreak();
+		yield return text("just gone. Up in flames in an instant.");
+		yield return lineBreak();
+		yield return link("\"What were you doing when it happened?\"", "WomanB", null);
+		yield return lineBreak();
+		yield return link("\"Did you notice anything suspicious?\"", "WomanC", null);
+		yield return lineBreak();
+		yield return link("\"Thank you for your time.\"", "GreetMan", null);
+		yield break;
+	}
+
+
+	// .............
+	// #17: WomanB
+
+	void passage17_Init()
+	{
+		this.Passages[@"WomanB"] = new StoryPassage(@"WomanB", new string[]{  }, passage17_Main);
+	}
+
+	IStoryThread passage17_Main()
+	{
+		yield return text("My husband and I were at the bar, winding down from a long week");
+		yield return lineBreak();
+		yield return text("of work. Someone came bursting through the door, shouting, \"Fire!\".");
+		yield return lineBreak();
+		yield return text("We rushed outside and saw the smoke rising over the roofs.");
+		yield return lineBreak();
+		yield return link("\"I understand your house was one of the first.\"", "WomanA", null);
+		yield return lineBreak();
+		yield return link("\"Did you notice anything suspicious?\"", "WomanC", null);
+		yield return lineBreak();
+		yield return link("\"Thank you for your time.\"", "GreetMan", null);
+		yield break;
+	}
+
+
+	// .............
+	// #18: WomanC
+
+	void passage18_Init()
+	{
+		this.Passages[@"WomanC"] = new StoryPassage(@"WomanC", new string[]{  }, passage18_Main);
+	}
+
+	IStoryThread passage18_Main()
+	{
+		yield return text("Suspicious? No. Everyone in this town knows everyone.");
+		yield return lineBreak();
+		yield return text("We're like an extended family. Everyone has been so supportive");
+		yield return lineBreak();
+		yield return text("of us. But, if anyone would know anything I don't, it would be");
+		yield return lineBreak();
+		yield return text("Pastor Mike. He ran the old church that was destroyed in the fire.");
+		yield return lineBreak();
+		yield return link("I understand your house was one of the first.", "WomanA", null);
+		yield return lineBreak();
+		yield return link("What were you doing that night.", "WomanB", null);
+		yield return lineBreak();
+		yield return link("Thank you for your time.", "GreetMan", null);
 		yield break;
 	}
 
