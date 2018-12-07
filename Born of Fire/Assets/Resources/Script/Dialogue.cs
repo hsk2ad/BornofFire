@@ -106,9 +106,13 @@ public class Dialogue : MonoBehaviour {
 
     public void OpenDialogueWindow() {
         Debug.Log("start");
-        if (open) return;
+
+        if(!DialogueSingletonManager.IsAvailable()) {
+            return;
+        }
+
         dialogueHolder.SetActive(true);
-        //dialogueContainer.SetActive(true);
+        DialogueSingletonManager.SetDialogueRunning();
         story.Begin();
         open = true;
     }
@@ -263,6 +267,7 @@ class QueuedEnding : QueuedAction {
         Debug.Log("Ending!");
         yield return new WaitForSeconds(0.8f);
         d.CloseDialogueWindow();
+        DialogueSingletonManager.EndDialogueRunning();
         yield return null;
     }
 }
