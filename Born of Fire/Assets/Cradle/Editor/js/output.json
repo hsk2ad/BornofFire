@@ -3,31 +3,22 @@
     "result": {
         "passages": [
             {
-                "Name": "Untitled Passage",
+                "Name": "Start",
                 "Pid": "1",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "link-goto:\"D: “I'm going to conclude that it is the students. There is no such thing as fae, and they must have done it” \",\" Convo2\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"D: “I'm going to conclude that it is the students. There is no such thing as fae, and they must have done it” \",\" Convo2\")",
+                        "innerText": "ImportVar:\"var\"",
+                        "name": "importvar",
+                        "text": "(ImportVar:\"var\")",
                         "tokens": [
                             {
-                                "text": "link-goto:",
+                                "text": "ImportVar:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "D: “I'm going to conclude that it is the students. There is no such thing as fae, and they must have done it” ",
-                                "text": "\"D: “I'm going to conclude that it is the students. There is no such thing as fae, and they must have done it” \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Convo2",
-                                "text": "\" Convo2\"",
+                                "innerText": "var",
+                                "text": "\"var\"",
                                 "type": "string"
                             }
                         ],
@@ -36,35 +27,114 @@
                     {
                         "text": "\n",
                         "type": "br"
+                    },
+                    {
+                        "text": "Here's an incrementer!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Increment\",\"Increment\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Increment\",\"Increment\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Increment",
+                                "text": "\"Increment\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Increment",
+                                "text": "\"Increment\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             },
             {
-                "Name": " Convo2",
+                "Name": "Increment",
                 "Pid": "2",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "link-goto:\"Townspeople: \\\"We should kick them out! They don't deserve to live here!\\\" \",\" Convo3\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Townspeople: \\\"We should kick them out! They don't deserve to live here!\\\" \",\" Convo3\")",
+                        "innerText": "set:$var to it + 1",
+                        "name": "set",
+                        "text": "(set:$var to it + 1)",
                         "tokens": [
                             {
-                                "text": "link-goto:",
+                                "text": "set:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Townspeople: \\\"We should kick them out! They don't deserve to live here!\\\" ",
-                                "text": "\"Townspeople: \\\"We should kick them out! They don't deserve to live here!\\\" \"",
-                                "type": "string"
+                                "name": "var",
+                                "text": "$var",
+                                "type": "variable"
                             },
                             {
-                                "text": ",",
-                                "type": "comma"
+                                "text": " ",
+                                "type": "whitespace"
                             },
                             {
-                                "innerText": " Convo3",
-                                "text": "\" Convo3\"",
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "it",
+                                "type": "identifier"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "+",
+                                "type": "addition"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "1",
+                                "type": "number",
+                                "value": 1
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "ExportVar:\"var\"",
+                        "name": "exportvar",
+                        "text": "(ExportVar:\"var\")",
+                        "tokens": [
+                            {
+                                "text": "ExportVar:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "var",
+                                "text": "\"var\"",
                                 "type": "string"
                             }
                         ],
@@ -73,26 +143,166 @@
                     {
                         "text": "\n",
                         "type": "br"
+                    },
+                    {
+                        "innerText": "set:$disp to \"Value is: \" + (text:$var)",
+                        "name": "set",
+                        "text": "(set:$disp to \"Value is: \" + (text:$var))",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "name": "disp",
+                                "text": "$disp",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "innerText": "Value is: ",
+                                "text": "\"Value is: \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "+",
+                                "type": "addition"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "innerText": "text:$var",
+                                "name": "text",
+                                "text": "(text:$var)",
+                                "tokens": [
+                                    {
+                                        "text": "text:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "name": "var",
+                                        "text": "$var",
+                                        "type": "variable"
+                                    }
+                                ],
+                                "type": "macro"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "name": "disp",
+                        "text": "$disp",
+                        "type": "variable"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Continue.\",\"Loop\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Continue.\",\"Loop\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Continue.",
+                                "text": "\"Continue.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Loop",
+                                "text": "\"Loop\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Be done.\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Be done.\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Be done.",
+                                "text": "\"Be done.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "End",
+                                "text": "\"End\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             },
             {
-                "Name": " Convo3",
+                "Name": "Loop",
                 "Pid": "3",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "link-goto:\"Students A B C: \\\"We promise that we didnt do it.\\\" *Gets kicked out of the town* \",\" Convo4\"",
+                        "text": "Here's an incrementer!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Increment\",\"Increment\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Students A B C: \\\"We promise that we didnt do it.\\\" *Gets kicked out of the town* \",\" Convo4\")",
+                        "text": "(link-goto:\"Increment\",\"Increment\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Students A B C: \\\"We promise that we didnt do it.\\\" *Gets kicked out of the town* ",
-                                "text": "\"Students A B C: \\\"We promise that we didnt do it.\\\" *Gets kicked out of the town* \"",
+                                "innerText": "Increment",
+                                "text": "\"Increment\"",
                                 "type": "string"
                             },
                             {
@@ -100,54 +310,36 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " Convo4",
-                                "text": "\" Convo4\"",
+                                "innerText": "Increment",
+                                "text": "\"Increment\"",
                                 "type": "string"
                             }
                         ],
                         "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
                     }
                 ]
             },
             {
-                "Name": " Convo4",
+                "Name": "End",
                 "Pid": "4",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "[",
-                        "type": "text"
-                    },
-                    {
-                        "text": "[",
-                        "type": "text"
-                    },
-                    {
-                        "innerText": "The night comes",
-                        "text": "*The night comes*",
+                        "innerText": "EndDialogue:\"plz\"",
+                        "name": "enddialogue",
+                        "text": "(EndDialogue:\"plz\")",
                         "tokens": [
                             {
-                                "text": "The night comes",
-                                "type": "text"
+                                "text": "EndDialogue:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "plz",
+                                "text": "\"plz\"",
+                                "type": "string"
                             }
                         ],
-                        "type": "em"
-                    },
-                    {
-                        "text": ". There is a shadow that appears near the church with wings and it laughs. ",
-                        "type": "text"
-                    },
-                    {
-                        "text": "*",
-                        "type": "text"
-                    },
-                    {
-                        "text": "Is it one of the student? or is it actually a fae?\"",
-                        "type": "text"
+                        "type": "macro"
                     }
                 ]
             }

@@ -41,15 +41,17 @@ public partial class @PastorMike: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	public readonly Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros macros1;
 	public readonly DialogueEnder macros2;
+	public readonly GlobalVarMacros macros3;
 
 	@PastorMike()
 	{
-		this.StartPassage = "Introduction";
+		this.StartPassage = "Start";
 
 		base.Vars = new VarDefs() { Story = this, StrictMode = true };
 
 		macros1 = new Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros() { Story = this };
 		macros2 = new DialogueEnder() { Story = this };
+		macros3 = new GlobalVarMacros() { Story = this };
 
 		base.Init();
 		passage1_Init();
@@ -69,206 +71,254 @@ public partial class @PastorMike: Cradle.StoryFormats.Harlowe.HarloweStory
 	#endregion
 
 	// .............
-	// #1: Introduction
+	// #1: Start
 
 	void passage1_Init()
 	{
-		this.Passages[@"Introduction"] = new StoryPassage(@"Introduction", new string[]{  }, passage1_Main);
+		this.Passages[@"Start"] = new StoryPassage(@"Start", new string[]{  }, passage1_Main);
 	}
 
 	IStoryThread passage1_Main()
 	{
-		yield return text("\"Hello. What brings you to the House of God today?\"");
+		yield return text("\"Hello. What brings you to the house of God?\"");
 		yield return lineBreak();
+		yield return link("\"I was wondering if you could tell me anything about the fire.\"", "AskFire", null);
 		yield return lineBreak();
-		yield return link("\"I'm the detective they sent to figure out how the fire started.\"", "But why?", null);
+		yield return link("\"How have the townspeople been doing?\"", "AskPeople", null);
 		yield return lineBreak();
-		yield return link("\"I just want to help in any way I can.\"", "Good.", null);
+		yield return link("\"Can you tell me about the history of this town?\"", "History", null);
 		yield return lineBreak();
-		yield return link("\"What do you know about the old church?\"", "Ah", null);
+		yield return link("\"Did you notice anything suspicious related to the fire?\"", "AskSus", null);
+		yield return lineBreak();
+		yield return link("\"I'm just here to interview a few people\"", "Interview", null);
 		yield break;
 	}
 
 
 	// .............
-	// #2: But why?
+	// #2: AskFire
 
 	void passage2_Init()
 	{
-		this.Passages[@"But why?"] = new StoryPassage(@"But why?", new string[]{  }, passage2_Main);
+		this.Passages[@"AskFire"] = new StoryPassage(@"AskFire", new string[]{  }, passage2_Main);
 	}
 
 	IStoryThread passage2_Main()
 	{
-		yield return text("\"And you think you might find answers here?\"");
+		yield return text("\"Ah. A beautiful structure. It's a shame we couldn't afford to maitain it. Between the mold, the rust, and the asbestos, you can only fight mortality for so long. But I suppose the fire took it before the decay did. I was told it began in my old church, and grew quickly to consume a few");
 		yield return lineBreak();
+		yield return text("surrounding houses. The couple living here lost their house, along with");
 		yield return lineBreak();
-		yield return link("\"I need to interview a few of the people here.\"", "Careful", null);
+		yield return text("their beloved daughter, God rest her soul.\"");
 		yield return lineBreak();
-		yield return link("\"I want to ask you a few questions about this town\"", "AskAway", null);
+		yield return link("\"Did the gas lines have any problems?\"", "Gas", null);
+		yield return lineBreak();
+		yield return link("\"You were told? Were you not in the church that night?\"", "Absence", null);
+		yield return lineBreak();
+		yield return link("\"How have the townspeople been doing?\"", "AskPeople", null);
+		yield return lineBreak();
+		yield return link("\"Did you notice anything suspicious related to the fire?\"", "AskSus", null);
 		yield break;
 	}
 
 
 	// .............
-	// #3: Good.
+	// #3: AskSus
 
 	void passage3_Init()
 	{
-		this.Passages[@"Good."] = new StoryPassage(@"Good.", new string[]{  }, passage3_Main);
+		this.Passages[@"AskSus"] = new StoryPassage(@"AskSus", new string[]{  }, passage3_Main);
 	}
 
 	IStoryThread passage3_Main()
 	{
-		yield return text("\"We could always use more hands. Some of these people lost their entire livelihoods in the fire.\"");
+		yield return text("\"I'm terribly sorry. I wouldn't be able to tell you.");
 		yield return lineBreak();
+		yield return text("I was not present in the church that night");
 		yield return lineBreak();
-		macros2.EndDialogue("Good boy!");
+		yield return text("You might find some clues there, though.\"");
+		yield return lineBreak();
+		yield return link("\"Why weren't you in the church?\"", "Absence", null);
+		yield return lineBreak();
+		yield return link("\"What is left of the old church?\"", "Remains", null);
 		yield break;
 	}
 
 
 	// .............
-	// #4: Ah
+	// #4: AskPeople
 
 	void passage4_Init()
 	{
-		this.Passages[@"Ah"] = new StoryPassage(@"Ah", new string[]{  }, passage4_Main);
+		this.Passages[@"AskPeople"] = new StoryPassage(@"AskPeople", new string[]{  }, passage4_Main);
 	}
 
 	IStoryThread passage4_Main()
 	{
-		yield return text("\"Ah. A beautiful structure. It's a shame we couldn't afford to maitain it. Between the mold, the rust, the asthbestos and the sinking foundation, you can only fight mortality for so long.\"");
+		yield return text("\"Recovering. But slowly. Everyone lost something in that fire.");
 		yield return lineBreak();
+		yield return text("The couple residing in this new church, most of all.\"");
 		yield return lineBreak();
-		yield return link("\"What about the gas lines? Did they have any problems?\"", "IDTS", null);
+		yield return link("\"I was wondering if you could tell me anything about the fire.\"", "AskFire", null);
+		yield return lineBreak();
+		yield return link("\"Did you notice anything suspicious related to the fire?\"", "AskSus", null);
 		yield break;
 	}
 
 
 	// .............
-	// #5: Careful
+	// #5: Absence
 
 	void passage5_Init()
 	{
-		this.Passages[@"Careful"] = new StoryPassage(@"Careful", new string[]{  }, passage5_Main);
+		this.Passages[@"Absence"] = new StoryPassage(@"Absence", new string[]{  }, passage5_Main);
 	}
 
 	IStoryThread passage5_Main()
 	{
-		yield return text("\"Well go ahead. Just keep in mind that these people have been through something traumatic, so choose you words wisely.\"");
+		yield return text("\"Erm, I was attending to some official church matters.");
 		yield return lineBreak();
+		yield return text("Also, even spiritual leaders need breaks every now and then.");
 		yield return lineBreak();
-		yield return link(">", "End", null);
+		yield return text("Although, I regret not being there. Perhaps I could have been able");
+		yield return lineBreak();
+		yield return text("to do something.\"");
+		yield return lineBreak();
+		yield return text("Pastor Mike's eyes extinguish slightly, then gaze at you with a sudden glow.");
+		yield return lineBreak();
+		yield return text("\"Ah, there is something you could do.\"");
+		yield return lineBreak();
+		yield return link("\"Yes?\"", "WhatIsIt", null);
 		yield break;
 	}
 
 
 	// .............
-	// #6: AskAway
+	// #6: Remains
 
 	void passage6_Init()
 	{
-		this.Passages[@"AskAway"] = new StoryPassage(@"AskAway", new string[]{  }, passage6_Main);
+		this.Passages[@"Remains"] = new StoryPassage(@"Remains", new string[]{  }, passage6_Main);
 	}
 
 	IStoryThread passage6_Main()
 	{
-		yield return text("\"Ask away.\"");
+		yield return text("\"The structure above ground is completely destroyed, anything below");
 		yield return lineBreak();
+		yield return text("ground is a different story.");
 		yield return lineBreak();
-		yield return link("\"What do you know about the old church?\"", "Ah", null);
+		yield return text("If I had been there...\"");
 		yield return lineBreak();
-		yield return link("\"What do you know about the history of this town?\"", "History", null);
+		yield return text("Pastor Mike's eyes extinguish slightly, then gaze at you with a sudden glow.");
+		yield return lineBreak();
+		yield return text("\"Ah, there is something you could do.\"");
+		yield return lineBreak();
+		yield return link("\"Yes?\"", "WhatIsIt", null);
 		yield break;
 	}
 
 
 	// .............
-	// #7: IDTS
+	// #7: WhatIsIt
 
 	void passage7_Init()
 	{
-		this.Passages[@"IDTS"] = new StoryPassage(@"IDTS", new string[]{  }, passage7_Main);
+		this.Passages[@"WhatIsIt"] = new StoryPassage(@"WhatIsIt", new string[]{  }, passage7_Main);
 	}
 
 	IStoryThread passage7_Main()
 	{
-		yield return text("\"The gas was broken even before I started preaching there. There were always more urgent matters to deal with. When I got put in charge I had it permenately disabled for safety reasons.\"");
+		yield return text("\"Some items of importance was left in the basement of the old church.");
 		yield return lineBreak();
+		yield return text("The old church had solid stone foundations, so the basement");
 		yield return lineBreak();
-		yield return link("\"So it couldn't have started the fire?\"", "Nope", null);
+		yield return text("was largely untouched.");
+		yield return lineBreak();
+		yield return text("Could I trouble you to retrieve a chest of my old books?");
+		yield return lineBreak();
+		yield return text("I haven't been able to go myself as of late, and you may find some");
+		yield return lineBreak();
+		yield return text("clues while you're there.\"");
+		yield return lineBreak();
+		yield return link("Leave", "End", null);
 		yield break;
 	}
 
 
 	// .............
-	// #8: Nope
+	// #8: End
 
 	void passage8_Init()
 	{
-		this.Passages[@"Nope"] = new StoryPassage(@"Nope", new string[]{  }, passage8_Main);
+		this.Passages[@"End"] = new StoryPassage(@"End", new string[]{  }, passage8_Main);
 	}
 
 	IStoryThread passage8_Main()
 	{
-		yield return text("\"Even if one of the pipes broke open, there wouldn't be any gas to leak out.\"");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link(">", "End", null);
+		macros2.EndDialogue("end");
 		yield break;
 	}
 
 
 	// .............
-	// #9: History
+	// #9: Interview
 
 	void passage9_Init()
 	{
-		this.Passages[@"History"] = new StoryPassage(@"History", new string[]{  }, passage9_Main);
+		this.Passages[@"Interview"] = new StoryPassage(@"Interview", new string[]{  }, passage9_Main);
 	}
 
 	IStoryThread passage9_Main()
 	{
-		yield return text("\"Let's see. Founded by Anston Blackwood. Officially chartered in 1789. Survived one hundred eighty winters, through war and famine alike. Population never rose above 700. Recently suffered a reasonably sized fire, which they will no doubt recover from.\"");
+		yield return text("\"Well go ahead. Just keep in mind that these people have been through much trauma, so choose your words wisely.\"");
 		yield return lineBreak();
-		yield return text("\"Anything in particular?\"");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("\"Any mysterious deaths or disasters in that time?", "Some.", null);
+		yield return link("Leave", "End", null);
 		yield break;
 	}
 
 
 	// .............
-	// #10: Some.
+	// #10: Gas
 
 	void passage10_Init()
 	{
-		this.Passages[@"Some."] = new StoryPassage(@"Some.", new string[]{  }, passage10_Main);
+		this.Passages[@"Gas"] = new StoryPassage(@"Gas", new string[]{  }, passage10_Main);
 	}
 
 	IStoryThread passage10_Main()
 	{
-		yield return text("\"Every town has its stories. We've had other fires, and other tragedies. The locals sometimes talk about the town being \"cursed\", but it's all just superstition, I assure you.\"");
+		yield return text("\"The gas was broken even before I started preaching there. There were always more urgent matters to deal with. When I got put in charge I had it permenantely disabled for safety reasons. So even if the pipes leaked,");
 		yield return lineBreak();
+		yield return text("there would be no gas.\"");
 		yield return lineBreak();
-		yield return link(">", "End", null);
+		yield return link("\"Were you not in the church that night?\"", "Absence", null);
+		yield return lineBreak();
+		yield return link("\"How have the townspeople been doing?\"", "AskPeople", null);
+		yield return lineBreak();
+		yield return link("\"Did you notice anything suspicious related to the fire?\"", "AskSus", null);
 		yield break;
 	}
 
 
 	// .............
-	// #11: End
+	// #11: History
 
 	void passage11_Init()
 	{
-		this.Passages[@"End"] = new StoryPassage(@"End", new string[]{  }, passage11_Main);
+		this.Passages[@"History"] = new StoryPassage(@"History", new string[]{  }, passage11_Main);
 	}
 
 	IStoryThread passage11_Main()
 	{
-		macros2.EndDialogue("Harder Daddy");
+		yield return text("\"Let's see. Founded by Anston Blackwood. Officially chartered in 1789. Survived one hundred eighty winters, through war and famine alike. Population never rose above 700. There have been a handful of tragedies.");
+		yield return lineBreak();
+		yield return text("The locals sometimes talk about the town being \"cursed\", but it's all just superstition, I assure you.\"");
+		yield return lineBreak();
+		yield return link("\"I was wondering if you could tell me anything about the fire.\"", "AskFire", null);
+		yield return lineBreak();
+		yield return link("\"How have the townspeople been doing?\"", "AskPeople", null);
+		yield return lineBreak();
+		yield return link("\"Did you notice anything suspicious related to the fire?\"", "AskSus", null);
 		yield break;
 	}
 
