@@ -236,6 +236,8 @@ class QueuedDisplayText : QueuedAction {
 
         field.gameObject.transform.SetParent(d.dialogueContainer.transform);
 
+        LayoutRebuilder.ForceRebuildLayoutImmediate(d.dialogueContainer.GetComponent<RectTransform>());
+
         yield return d.StartCoroutine(d.ScrollToBottom());
     }
 }
@@ -255,6 +257,8 @@ class QueuedDisplayLink : QueuedAction {
         field.gameObject.SetActive(true);
 
         field.gameObject.transform.SetParent(d.dialogueContainer.transform);
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(d.dialogueContainer.GetComponent<RectTransform>());
 
         yield return d.StartCoroutine(d.ScrollToBottom());
     }
