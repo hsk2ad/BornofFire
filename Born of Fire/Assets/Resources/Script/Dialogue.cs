@@ -20,10 +20,15 @@ public class Dialogue : MonoBehaviour {
 
     public GameObject dialogueContainer;
 
+    public GameObject speakerObject;
+    public Text speakerBox;
+
     public ScrollRect consoleScroll;
 
     public float updateTime = 20;
     public float updateBuffer = 0;
+
+    string speaker;
 
     bool scrolling;
 
@@ -63,6 +68,7 @@ public class Dialogue : MonoBehaviour {
         StartCoroutine(ProcessQueue());
 
         open = false;
+        speaker = "";
 
         //this.story.Begin();
 	}
@@ -87,6 +93,16 @@ public class Dialogue : MonoBehaviour {
         QueuedEnding ending = new QueuedEnding();
 
         queue.Enqueue(ending);
+    }
+
+    public void SetSpeaker(string newName) {
+        speaker = newName;
+        if(newName == "") {
+            speakerObject.SetActive(false);
+        } else {
+            speakerObject.SetActive(true);
+            speakerBox.text = speaker;
+        }
     }
 
     public void CloseDialogueWindow() {
@@ -267,6 +283,7 @@ class QueuedEnding : QueuedAction {
         Debug.Log("Ending!");
         yield return new WaitForSeconds(0.8f);
         d.CloseDialogueWindow();
+        d.SetSpeaker("");
         DialogueSingletonManager.EndDialogueRunning();
         yield return null;
     }
