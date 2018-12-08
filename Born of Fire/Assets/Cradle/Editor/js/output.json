@@ -2,28 +2,175 @@
     "console": [
         {
             "type": "message",
-            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:77:3712\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:77:10197\nevery@[native code]\napply@[native code]\ncall@[native code]\ncall@[native code]\nCall@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:74:4450\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:74:18955\nchildrenProbablyInline@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:77:10106\ntransitionIn@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:77:11700\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:78:546\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:80:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:80:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:80:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:80:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:81:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:64:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:64:36747 undefined"
+            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:71:3712\nassertOnlyHas@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:71:12174\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:71:61968\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:74:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:74:3254\ny@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:72:60156\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:74:4176\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:57:21334\neach@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:57:19390\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:74:3888\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:74:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:74:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:74:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:75:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:58:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Dolls/WellPast.html:58:36747 undefined"
         }
     ],
     "result": {
         "passages": [
             {
-                "Name": "HI INGRID",
+                "Name": "Start",
                 "Pid": "1",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "SetSpeaker:\"Innkeeper\"",
+                        "text": "You open your eyes, a massive headache right under your forehead.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Your body aches, and feels as though it was stretched through a grate.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Lifting your chest off the ground, propped up by your elbows, you look forward, trying not to turn your head and provoke your nasty migraine.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Around you is the well you climbed down earlier, but something seems off.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Examine the walls.\",\"Walls\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Examine the walls.\",\"Walls\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Examine the walls.",
+                                "text": "\"Examine the walls.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Walls",
+                                "text": "\"Walls\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Look up.\",\"LookUp\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Look up.\",\"LookUp\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Look up.",
+                                "text": "\"Look up.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "LookUp",
+                                "text": "\"LookUp\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Walls",
+                "Pid": "2",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "The first thing you notice is the creeping feeling of cold snaking up your body.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Water.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Water in the well. Water on the walls.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Confusion strikes you, the walls are slick where they had been dry, and pristine where they had been weathered.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "A chilling feeling creeps up your spine.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Your hair stands on end.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "SetSpeaker: \"???\"",
                         "name": "setspeaker",
-                        "text": "(SetSpeaker:\"Innkeeper\")",
+                        "text": "(SetSpeaker: \"???\")",
                         "tokens": [
                             {
                                 "text": "SetSpeaker:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Innkeeper",
-                                "text": "\"Innkeeper\"",
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "innerText": "???",
+                                "text": "\"???\"",
                                 "type": "string"
                             }
                         ],
@@ -34,7 +181,7 @@
                         "type": "br"
                     },
                     {
-                        "text": "\"Hey sweetie, how is the investigation going so far?\"",
+                        "text": "\"Come. Come.\"",
                         "type": "text"
                     },
                     {
@@ -42,405 +189,32 @@
                         "type": "br"
                     },
                     {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Good, I have a few leads?\\\" \",\" Innkeeper leads\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Good, I have a few leads?\\\" \",\" Innkeeper leads\")",
+                        "innerText": "giggles",
+                        "text": "*giggles*",
                         "tokens": [
                             {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Good, I have a few leads?\\\" ",
-                                "text": "\"\\\"Good, I have a few leads?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Innkeeper leads",
-                                "text": "\" Innkeeper leads\"",
-                                "type": "string"
+                                "text": "giggles",
+                                "type": "text"
                             }
                         ],
-                        "type": "macro"
+                        "type": "em"
                     },
                     {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Not that great.\\\" \",\" Innkeeper leads\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Not that great.\\\" \",\" Innkeeper leads\")",
+                        "innerText": "SetSpeaker: \"\"",
+                        "name": "setspeaker",
+                        "text": "(SetSpeaker: \"\")",
                         "tokens": [
                             {
-                                "text": "link-goto:",
+                                "text": "SetSpeaker:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Not that great.\\\" ",
-                                "text": "\"\\\"Not that great.\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " Innkeeper leads",
-                                "text": "\" Innkeeper leads\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    }
-                ]
-            },
-            {
-                "Name": " Innkeeper leads",
-                "Pid": "2",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Y'know, this is a small town and not a lot stays secret. A lot of news comes through here.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Oh, what do you know?\\\"\",\"\\\"Oh, what do you know?\\\"\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Oh, what do you know?\\\"\",\"\\\"Oh, what do you know?\\\"\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Oh, what do you know?\\\"",
-                                "text": "\"\\\"Oh, what do you know?\\\"\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "\\\"Oh, what do you know?\\\"",
-                                "text": "\"\\\"Oh, what do you know?\\\"\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    }
-                ]
-            },
-            {
-                "Name": "\"Oh, what do you know?\"",
-                "Pid": "3",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"What do you want to know?\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"What's the deal with that orphan hanging around here?\\\" \",\" orphan\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"What's the deal with that orphan hanging around here?\\\" \",\" orphan\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"What's the deal with that orphan hanging around here?\\\" ",
-                                "text": "\"\\\"What's the deal with that orphan hanging around here?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " orphan",
-                                "text": "\" orphan\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"Why does that old man hate the college kids?\\\" \",\" old man\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Why does that old man hate the college kids?\\\" \",\" old man\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"Why does that old man hate the college kids?\\\" ",
-                                "text": "\"\\\"Why does that old man hate the college kids?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " old man",
-                                "text": "\" old man\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"What's the deal with those rumors about the dead kid?\\\" \",\" dead kid\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"What's the deal with those rumors about the dead kid?\\\" \",\" dead kid\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "\\\"What's the deal with those rumors about the dead kid?\\\" ",
-                                "text": "\"\\\"What's the deal with those rumors about the dead kid?\\\" \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " dead kid",
-                                "text": "\" dead kid\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    }
-                ]
-            },
-            {
-                "Name": " orphan",
-                "Pid": "4",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Oh, uh, I actually don't no what his deal is. I've never seen him before, but ever since the fire he's just been ... hanging around. He seems nice enough though, I guess.\"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Intesting.\",\"What else?\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Intesting.\",\"What else?\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Intesting.",
-                                "text": "\"Intesting.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "What else?",
-                                "text": "\"What else?\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " old man",
-                "Pid": "5",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Ever since those kids came back for Christmas break they've been acting real strange, talking about fairies and stuff, hanging around in the old church. They've been driving Gary up the wall! He lives right next to that church. They hang out there drinking and smoking into the dead of night. And I don't mean cigarettes.\" ",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Interesting.\",\"What else?\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Interesting.\",\"What else?\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Interesting.",
-                                "text": "\"Interesting.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "What else?",
-                                "text": "\"What else?\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": " dead kid",
-                "Pid": "6",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "\"Oh, there's this whole legend that those people like to spread around. Something about some curse from the olden days or something. In my opinion, it's all a bunch of superstition. \"",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Interesting.\",\"What else?\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Interesting.\",\"What else?\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Interesting.",
-                                "text": "\"Interesting.\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "What else?",
-                                "text": "\"What else?\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": " ",
-                        "type": "text"
-                    }
-                ]
-            },
-            {
-                "Name": "End",
-                "Pid": "7",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "innerText": "EndDialogue:\"\"",
-                        "name": "enddialogue",
-                        "text": "(EndDialogue:\"\")",
-                        "tokens": [
-                            {
-                                "text": "EndDialogue:",
-                                "type": "macroName"
+                                "text": " ",
+                                "type": "whitespace"
                             },
                             {
                                 "text": "\"\"",
@@ -448,16 +222,46 @@
                             }
                         ],
                         "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"What the fuck?...\",\"Fall\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"What the fuck?...\",\"Fall\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "What the fuck?...",
+                                "text": "\"What the fuck?...\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Fall",
+                                "text": "\"Fall\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             },
             {
-                "Name": "What else?",
-                "Pid": "8",
+                "Name": "LookUp",
+                "Pid": "3",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "\"What else do you want to know?\"",
+                        "text": "The first thing you notice is the creeping feeling of cold snaking up your body.",
                         "type": "text"
                     },
                     {
@@ -465,30 +269,61 @@
                         "type": "br"
                     },
                     {
+                        "text": "Water.",
+                        "type": "text"
+                    },
+                    {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"What's the deal with that orphan hanging around here?\\\" \",\" orphan\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"What's the deal with that orphan hanging around here?\\\" \",\" orphan\")",
+                        "text": "Water in the well. Water on the walls.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Confusion strikes you. The six feet you climbed down has turned into an infinite pit. Above you is a dot of sky.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "A chilling feeling creeps up your spine.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Your hair stands on end.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "SetSpeaker: \"???\"",
+                        "name": "setspeaker",
+                        "text": "(SetSpeaker: \"???\")",
                         "tokens": [
                             {
-                                "text": "link-goto:",
+                                "text": "SetSpeaker:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"What's the deal with that orphan hanging around here?\\\" ",
-                                "text": "\"\\\"What's the deal with that orphan hanging around here?\\\" \"",
-                                "type": "string"
+                                "text": " ",
+                                "type": "whitespace"
                             },
                             {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " orphan",
-                                "text": "\" orphan\"",
+                                "innerText": "???",
+                                "text": "\"???\"",
                                 "type": "string"
                             }
                         ],
@@ -499,30 +334,43 @@
                         "type": "br"
                     },
                     {
+                        "text": "\"Come. Come.\"",
+                        "type": "text"
+                    },
+                    {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"\\\"Why does that old man hate the college kids?\\\" \",\" old man\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"Why does that old man hate the college kids?\\\" \",\" old man\")",
+                        "innerText": "giggles",
+                        "text": "*giggles*",
                         "tokens": [
                             {
-                                "text": "link-goto:",
+                                "text": "giggles",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "em"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "SetSpeaker: \"\"",
+                        "name": "setspeaker",
+                        "text": "(SetSpeaker: \"\")",
+                        "tokens": [
+                            {
+                                "text": "SetSpeaker:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"Why does that old man hate the college kids?\\\" ",
-                                "text": "\"\\\"Why does that old man hate the college kids?\\\" \"",
-                                "type": "string"
+                                "text": " ",
+                                "type": "whitespace"
                             },
                             {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": " old man",
-                                "text": "\" old man\"",
+                                "text": "\"\"",
                                 "type": "string"
                             }
                         ],
@@ -533,21 +381,17 @@
                         "type": "br"
                     },
                     {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"What's the deal with those rumors about the dead kid?\\\" \",\" dead kid\"",
+                        "innerText": "link-goto:\"What the fuck?...\",\"Fall\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"What's the deal with those rumors about the dead kid?\\\" \",\" dead kid\")",
+                        "text": "(link-goto:\"What the fuck?...\",\"Fall\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"What's the deal with those rumors about the dead kid?\\\" ",
-                                "text": "\"\\\"What's the deal with those rumors about the dead kid?\\\" \"",
+                                "innerText": "What the fuck?...",
+                                "text": "\"What the fuck?...\"",
                                 "type": "string"
                             },
                             {
@@ -555,8 +399,73 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": " dead kid",
-                                "text": "\" dead kid\"",
+                                "innerText": "Fall",
+                                "text": "\"Fall\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Fall",
+                "Pid": "4",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "A scream.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Above you, the figure of a girl falling.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Her body flails side to side, knocking itself against the well walls,",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "accelerating closer and closer to you.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Attempt to catch her.\",\"Catch\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Attempt to catch her.\",\"Catch\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Attempt to catch her.",
+                                "text": "\"Attempt to catch her.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Catch",
+                                "text": "\"Catch\"",
                                 "type": "string"
                             }
                         ],
@@ -567,21 +476,74 @@
                         "type": "br"
                     },
                     {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"\\\"I think I'm done here.\\\"\",\"End\"",
+                        "innerText": "link-goto:\"Shield yourself.\",\"Shield\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"\\\"I think I'm done here.\\\"\",\"End\")",
+                        "text": "(link-goto:\"Shield yourself.\",\"Shield\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "\\\"I think I'm done here.\\\"",
-                                "text": "\"\\\"I think I'm done here.\\\"\"",
+                                "innerText": "Shield yourself.",
+                                "text": "\"Shield yourself.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Shield",
+                                "text": "\"Shield\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Catch",
+                "Pid": "5",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "You hold out your arms to try and catch the falling girl.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "She hits your arms with an impactful and sickening crunch.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Your vision flashes with images of a lake, a drowning girl, a fire.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Then... nothing.\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Then... nothing.\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Then... nothing.",
+                                "text": "\"Then... nothing.\"",
                                 "type": "string"
                             },
                             {
@@ -591,6 +553,95 @@
                             {
                                 "innerText": "End",
                                 "text": "\"End\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Shield",
+                "Pid": "6",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "You duck and cover your head to protect yourself.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "She hits your body with an impactful and sickening crunch.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Pain flares through your spine.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Your vision flashes with images of a lake, a drowning girl, a fire.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Then... nothing.\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Then... nothing.\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Then... nothing.",
+                                "text": "\"Then... nothing.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "End",
+                                "text": "\"End\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "End",
+                "Pid": "7",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "EndDialogue:\"end\"",
+                        "name": "enddialogue",
+                        "text": "(EndDialogue:\"end\")",
+                        "tokens": [
+                            {
+                                "text": "EndDialogue:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "end",
+                                "text": "\"end\"",
                                 "type": "string"
                             }
                         ],
