@@ -1,24 +1,29 @@
 {
-    "console": [],
+    "console": [
+        {
+            "type": "message",
+            "value": "jQuery.Deferred exception: undefined is not a constructor (evaluating 'Number.isNaN(t)') includes@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:77:3712\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:77:10197\nevery@[native code]\napply@[native code]\ncall@[native code]\ncall@[native code]\nCall@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:74:4450\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:74:18955\nchildrenProbablyInline@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:77:10106\ntransitionIn@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:77:11700\nrender@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:78:546\nc@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:80:3813\nrenderInto@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:80:3254\nu@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:80:8919\ngoToPassage@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:80:9309\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:81:16874\nf@file:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:64:24025\nfile:///Users/jack/bof/Born%20of%20Fire/Assets/twine/Dialogues/Prologue/Innkeeper.html:64:36747 undefined"
+        }
+    ],
     "result": {
         "passages": [
             {
-                "Name": "Start",
+                "Name": "HI INGRID",
                 "Pid": "1",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "ImportVar:\"var\"",
-                        "name": "importvar",
-                        "text": "(ImportVar:\"var\")",
+                        "innerText": "SetSpeaker:\"Innkeeper\"",
+                        "name": "setspeaker",
+                        "text": "(SetSpeaker:\"Innkeeper\")",
                         "tokens": [
                             {
-                                "text": "ImportVar:",
+                                "text": "SetSpeaker:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "var",
-                                "text": "\"var\"",
+                                "innerText": "Innkeeper",
+                                "text": "\"Innkeeper\"",
                                 "type": "string"
                             }
                         ],
@@ -29,7 +34,7 @@
                         "type": "br"
                     },
                     {
-                        "text": "Here's an incrementer!",
+                        "text": "\"Hey sweetie, how is the investigation going so far?\"",
                         "type": "text"
                     },
                     {
@@ -37,17 +42,21 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Increment\",\"Increment\"",
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Good, I have a few leads?\\\" \",\" Innkeeper leads\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Increment\",\"Increment\")",
+                        "text": "(link-goto:\"\\\"Good, I have a few leads?\\\" \",\" Innkeeper leads\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Increment",
-                                "text": "\"Increment\"",
+                                "innerText": "\\\"Good, I have a few leads?\\\" ",
+                                "text": "\"\\\"Good, I have a few leads?\\\" \"",
                                 "type": "string"
                             },
                             {
@@ -55,8 +64,269 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "Increment",
-                                "text": "\"Increment\"",
+                                "innerText": " Innkeeper leads",
+                                "text": "\" Innkeeper leads\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Not that great.\\\" \",\" Innkeeper leads\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Not that great.\\\" \",\" Innkeeper leads\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Not that great.\\\" ",
+                                "text": "\"\\\"Not that great.\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " Innkeeper leads",
+                                "text": "\" Innkeeper leads\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    }
+                ]
+            },
+            {
+                "Name": " Innkeeper leads",
+                "Pid": "2",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Y'know, this is a small town and not a lot stays secret. A lot of news comes through here.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Oh, what do you know?\\\"\",\"\\\"Oh, what do you know?\\\"\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Oh, what do you know?\\\"\",\"\\\"Oh, what do you know?\\\"\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Oh, what do you know?\\\"",
+                                "text": "\"\\\"Oh, what do you know?\\\"\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "\\\"Oh, what do you know?\\\"",
+                                "text": "\"\\\"Oh, what do you know?\\\"\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    }
+                ]
+            },
+            {
+                "Name": "\"Oh, what do you know?\"",
+                "Pid": "3",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"What do you want to know?\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"What's the deal with that orphan hanging around here?\\\" \",\" orphan\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"What's the deal with that orphan hanging around here?\\\" \",\" orphan\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"What's the deal with that orphan hanging around here?\\\" ",
+                                "text": "\"\\\"What's the deal with that orphan hanging around here?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " orphan",
+                                "text": "\" orphan\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Why does that old man hate the college kids?\\\" \",\" old man\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"Why does that old man hate the college kids?\\\" \",\" old man\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"Why does that old man hate the college kids?\\\" ",
+                                "text": "\"\\\"Why does that old man hate the college kids?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " old man",
+                                "text": "\" old man\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"What's the deal with those rumors about the dead kid?\\\" \",\" dead kid\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"What's the deal with those rumors about the dead kid?\\\" \",\" dead kid\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"What's the deal with those rumors about the dead kid?\\\" ",
+                                "text": "\"\\\"What's the deal with those rumors about the dead kid?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " dead kid",
+                                "text": "\" dead kid\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    }
+                ]
+            },
+            {
+                "Name": " orphan",
+                "Pid": "4",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Oh, uh, I actually don't no what his deal is. I've never seen him before, but ever since the fire he's just been ... hanging around. He seems nice enough though, I guess.\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Intesting.\",\"What else?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Intesting.\",\"What else?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Intesting.",
+                                "text": "\"Intesting.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "What else?",
+                                "text": "\"What else?\"",
                                 "type": "string"
                             }
                         ],
@@ -65,173 +335,34 @@
                 ]
             },
             {
-                "Name": "Increment",
-                "Pid": "2",
+                "Name": " old man",
+                "Pid": "5",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "innerText": "set:$var to it + 1",
-                        "name": "set",
-                        "text": "(set:$var to it + 1)",
-                        "tokens": [
-                            {
-                                "text": "set:",
-                                "type": "macroName"
-                            },
-                            {
-                                "name": "var",
-                                "text": "$var",
-                                "type": "variable"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "text": "to",
-                                "type": "to"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "text": "it",
-                                "type": "identifier"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "text": "+",
-                                "type": "addition"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "text": "1",
-                                "type": "number",
-                                "value": 1
-                            }
-                        ],
-                        "type": "macro"
+                        "text": "\"Ever since those kids came back for Christmas break they've been acting real strange, talking about fairies and stuff, hanging around in the old church. They've been driving Gary up the wall! He lives right next to that church. They hang out there drinking and smoking into the dead of night. And I don't mean cigarettes.\" ",
+                        "type": "text"
                     },
                     {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "ExportVar:\"var\"",
-                        "name": "exportvar",
-                        "text": "(ExportVar:\"var\")",
-                        "tokens": [
-                            {
-                                "text": "ExportVar:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "var",
-                                "text": "\"var\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "set:$disp to \"Value is: \" + (text:$var)",
-                        "name": "set",
-                        "text": "(set:$disp to \"Value is: \" + (text:$var))",
-                        "tokens": [
-                            {
-                                "text": "set:",
-                                "type": "macroName"
-                            },
-                            {
-                                "name": "disp",
-                                "text": "$disp",
-                                "type": "variable"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "text": "to",
-                                "type": "to"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "innerText": "Value is: ",
-                                "text": "\"Value is: \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "text": "+",
-                                "type": "addition"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "innerText": "text:$var",
-                                "name": "text",
-                                "text": "(text:$var)",
-                                "tokens": [
-                                    {
-                                        "text": "text:",
-                                        "type": "macroName"
-                                    },
-                                    {
-                                        "name": "var",
-                                        "text": "$var",
-                                        "type": "variable"
-                                    }
-                                ],
-                                "type": "macro"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "name": "disp",
-                        "text": "$disp",
-                        "type": "variable"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Continue.\",\"Loop\"",
+                        "innerText": "link-goto:\"Interesting.\",\"What else?\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Continue.\",\"Loop\")",
+                        "text": "(link-goto:\"Interesting.\",\"What else?\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Continue.",
-                                "text": "\"Continue.\"",
+                                "innerText": "Interesting.",
+                                "text": "\"Interesting.\"",
                                 "type": "string"
                             },
                             {
@@ -239,8 +370,125 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "Loop",
-                                "text": "\"Loop\"",
+                                "innerText": "What else?",
+                                "text": "\"What else?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": " dead kid",
+                "Pid": "6",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"Oh, there's this whole legend that those people like to spread around. Something about some curse from the olden days or something. In my opinion, it's all a bunch of superstition. \"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Interesting.\",\"What else?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Interesting.\",\"What else?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Interesting.",
+                                "text": "\"Interesting.\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "What else?",
+                                "text": "\"What else?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": " ",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "End",
+                "Pid": "7",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "EndDialogue:\"\"",
+                        "name": "enddialogue",
+                        "text": "(EndDialogue:\"\")",
+                        "tokens": [
+                            {
+                                "text": "EndDialogue:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": "\"\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "What else?",
+                "Pid": "8",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "\"What else do you want to know?\"",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"What's the deal with that orphan hanging around here?\\\" \",\" orphan\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"What's the deal with that orphan hanging around here?\\\" \",\" orphan\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"What's the deal with that orphan hanging around here?\\\" ",
+                                "text": "\"\\\"What's the deal with that orphan hanging around here?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " orphan",
+                                "text": "\" orphan\"",
                                 "type": "string"
                             }
                         ],
@@ -251,17 +499,89 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Be done.\",\"End\"",
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"Why does that old man hate the college kids?\\\" \",\" old man\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Be done.\",\"End\")",
+                        "text": "(link-goto:\"\\\"Why does that old man hate the college kids?\\\" \",\" old man\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Be done.",
-                                "text": "\"Be done.\"",
+                                "innerText": "\\\"Why does that old man hate the college kids?\\\" ",
+                                "text": "\"\\\"Why does that old man hate the college kids?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " old man",
+                                "text": "\" old man\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"What's the deal with those rumors about the dead kid?\\\" \",\" dead kid\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"What's the deal with those rumors about the dead kid?\\\" \",\" dead kid\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"What's the deal with those rumors about the dead kid?\\\" ",
+                                "text": "\"\\\"What's the deal with those rumors about the dead kid?\\\" \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": " dead kid",
+                                "text": "\" dead kid\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"\\\"I think I'm done here.\\\"\",\"End\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"\\\"I think I'm done here.\\\"\",\"End\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "\\\"I think I'm done here.\\\"",
+                                "text": "\"\\\"I think I'm done here.\\\"\"",
                                 "type": "string"
                             },
                             {
@@ -271,71 +591,6 @@
                             {
                                 "innerText": "End",
                                 "text": "\"End\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "Loop",
-                "Pid": "3",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "text": "Here's an incrementer!",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Increment\",\"Increment\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Increment\",\"Increment\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Increment",
-                                "text": "\"Increment\"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Increment",
-                                "text": "\"Increment\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    }
-                ]
-            },
-            {
-                "Name": "End",
-                "Pid": "4",
-                "Tags": "",
-                "Tokens": [
-                    {
-                        "innerText": "EndDialogue:\"plz\"",
-                        "name": "enddialogue",
-                        "text": "(EndDialogue:\"plz\")",
-                        "tokens": [
-                            {
-                                "text": "EndDialogue:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "plz",
-                                "text": "\"plz\"",
                                 "type": "string"
                             }
                         ],

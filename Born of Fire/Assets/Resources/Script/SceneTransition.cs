@@ -61,6 +61,8 @@ public class SceneTransition : MonoBehaviour {
             return;
         }
 
+        DialogueSingletonManager.EndDialogueRunning();
+
         instance.StartCoroutine(instance.LoadScene(sceneName));
     }
 }

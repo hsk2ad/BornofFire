@@ -15,11 +15,14 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
 
-</script><tw-passagedata pid="1" name="HI INGRID" tags="" position="605,15" size="100,100">&quot;Hey sweetie, how is the investigation going so far?&quot;
+
+</script><tw-passagedata pid="1" name="HI INGRID" tags="" position="605,15" size="100,100">(SetSpeaker:&quot;Innkeeper&quot;)
+&quot;Hey sweetie, how is the investigation going so far?&quot;
 
 [[&quot;Good, I have a few leads?&quot; -&gt; Innkeeper leads]]
 
@@ -29,7 +32,7 @@
 
 [[&quot;Oh, what do you know?&quot;]]
 
-</tw-passagedata><tw-passagedata pid="3" name="&quot;Oh, what do you know?&quot;" tags="" position="612,323" size="100,100">&quot;What do you want to know?&quot;
+</tw-passagedata><tw-passagedata pid="3" name="&quot;Oh, what do you know?&quot;" tags="" position="613,324" size="100,100">&quot;What do you want to know?&quot;
 
 [[&quot;What&#39;s the deal with that orphan hanging around here?&quot; -&gt; orphan]]
 
@@ -39,11 +42,19 @@
 
 </tw-passagedata><tw-passagedata pid="4" name=" orphan" tags="" position="764,326" size="100,100">&quot;Oh, uh, I actually don&#39;t no what his deal is. I&#39;ve never seen him before, but ever since the fire he&#39;s just been ... hanging around. He seems nice enough though, I guess.&quot;
 
-[[Intesting.-&gt;End]]</tw-passagedata><tw-passagedata pid="5" name=" old man" tags="" position="641,523" size="100,100">&quot;Ever since those kids came back for Christmas break they&#39;ve been acting real strange, talking about fairies and stuff, hanging around in the old church. They&#39;ve been driving Gary up the wall! He lives right next to that church. They hang out there drinking and smoking into the dead of night. And I don&#39;t mean cigarettes.&quot; 
+[[Intesting.-&gt;What else?]]</tw-passagedata><tw-passagedata pid="5" name=" old man" tags="" position="642,522" size="100,100">&quot;Ever since those kids came back for Christmas break they&#39;ve been acting real strange, talking about fairies and stuff, hanging around in the old church. They&#39;ve been driving Gary up the wall! He lives right next to that church. They hang out there drinking and smoking into the dead of night. And I don&#39;t mean cigarettes.&quot; 
 
-[[Interesting.-&gt;End]]</tw-passagedata><tw-passagedata pid="6" name=" dead kid" tags="" position="781,169" size="100,100">&quot;Oh, there&#39;s this whole legend that those people like to spread around. Something about some curse from the olden days or something. In my opinion, it&#39;s all a bunch of superstition. &quot;
+[[Interesting.-&gt;What else?]]</tw-passagedata><tw-passagedata pid="6" name=" dead kid" tags="" position="781,169" size="100,100">&quot;Oh, there&#39;s this whole legend that those people like to spread around. Something about some curse from the olden days or something. In my opinion, it&#39;s all a bunch of superstition. &quot;
 
-[[Interesting.-&gt;End]] </tw-passagedata><tw-passagedata pid="7" name="End" tags="" position="1110,366" size="100,100">(ChangeScene:&quot;Prologue_OverworldMenuSelect&quot;)</tw-passagedata></tw-storydata>
+[[Interesting.-&gt;What else?]] </tw-passagedata><tw-passagedata pid="7" name="End" tags="" position="1110,366" size="100,100">(EndDialogue:&quot;&quot;)</tw-passagedata><tw-passagedata pid="8" name="What else?" tags="" position="925,457" size="100,100">&quot;What else do you want to know?&quot;
+
+[[&quot;What&#39;s the deal with that orphan hanging around here?&quot; -&gt; orphan]]
+
+[[&quot;Why does that old man hate the college kids?&quot; -&gt; old man]]
+
+[[&quot;What&#39;s the deal with those rumors about the dead kid?&quot; -&gt; dead kid]]
+
+[[&quot;I think I&#39;m done here.&quot;-&gt;End]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

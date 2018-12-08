@@ -41,6 +41,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	public readonly Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros macros1;
 	public readonly DialogueEnder macros2;
+	public readonly GlobalVarMacros macros3;
 
 	@Innkeeper()
 	{
@@ -50,6 +51,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 
 		macros1 = new Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros() { Story = this };
 		macros2 = new DialogueEnder() { Story = this };
+		macros3 = new GlobalVarMacros() { Story = this };
 
 		base.Init();
 		passage1_Init();
@@ -59,6 +61,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage5_Init();
 		passage6_Init();
 		passage7_Init();
+		passage8_Init();
 	}
 
 	// ---------------
@@ -74,6 +77,8 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage1_Main()
 	{
+		macros2.SetSpeaker("Innkeeper");
+		yield return lineBreak();
 		yield return text("\"Hey sweetie, how is the investigation going so far?\"");
 		yield return lineBreak();
 		yield return lineBreak();
@@ -146,7 +151,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Oh, uh, I actually don't no what his deal is. I've never seen him before, but ever since the fire he's just been ... hanging around. He seems nice enough though, I guess.\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return link("Intesting.", "End", null);
+		yield return link("Intesting.", "What else?", null);
 		yield break;
 	}
 
@@ -164,7 +169,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Ever since those kids came back for Christmas break they've been acting real strange, talking about fairies and stuff, hanging around in the old church. They've been driving Gary up the wall! He lives right next to that church. They hang out there drinking and smoking into the dead of night. And I don't mean cigarettes.\" ");
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return link("Interesting.", "End", null);
+		yield return link("Interesting.", "What else?", null);
 		yield break;
 	}
 
@@ -182,7 +187,7 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Oh, there's this whole legend that those people like to spread around. Something about some curse from the olden days or something. In my opinion, it's all a bunch of superstition. \"");
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return link("Interesting.", "End", null);
+		yield return link("Interesting.", "What else?", null);
 		yield return text(" ");
 		yield break;
 	}
@@ -198,7 +203,34 @@ public partial class @Innkeeper: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage7_Main()
 	{
-		macros2.ChangeScene("Prologue_OverworldMenuSelect");
+		macros2.EndDialogue("");
+		yield break;
+	}
+
+
+	// .............
+	// #8: What else?
+
+	void passage8_Init()
+	{
+		this.Passages[@"What else?"] = new StoryPassage(@"What else?", new string[]{  }, passage8_Main);
+	}
+
+	IStoryThread passage8_Main()
+	{
+		yield return text("\"What else do you want to know?\"");
+		yield return lineBreak();
+		yield return lineBreak();
+		yield return link("\"What's the deal with that orphan hanging around here?\" ", " orphan", null);
+		yield return lineBreak();
+		yield return lineBreak();
+		yield return link("\"Why does that old man hate the college kids?\" ", " old man", null);
+		yield return lineBreak();
+		yield return lineBreak();
+		yield return link("\"What's the deal with those rumors about the dead kid?\" ", " dead kid", null);
+		yield return lineBreak();
+		yield return lineBreak();
+		yield return link("\"I think I'm done here.\"", "End", null);
 		yield break;
 	}
 
