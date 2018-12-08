@@ -14,4 +14,9 @@ public class DialogueEnder : RuntimeMacros {
     public void ChangeScene(string newSceneName) {
         SceneTransition.GoToScene(newSceneName);
     }
+
+    [RuntimeMacro]
+    public void SetSpeaker(string speakerName) {
+        this.Story.SendMessage("SetSpeaker", speakerName);
+    }
 }

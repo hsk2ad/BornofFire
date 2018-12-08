@@ -64,7 +64,7 @@ public class LinkButton : MonoBehaviour, IPointerClickHandler
     }
 
     public void Activate() {
-        textbox.text = text;
+        //textbox.text = text;
         textbox.color = ACTIVE_COLOR;
         textbox.fontStyle = FontStyle.Italic;
         live = true;
