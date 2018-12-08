@@ -40,7 +40,9 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 	// ---------------
 
 	public readonly Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros macros1;
-	public readonly DialogueEnder macros2;
+	public readonly HOOK macros2;
+	public readonly DialogueEnder macros3;
+	public readonly GlobalVarMacros macros4;
 
 	@FarmerJamenson()
 	{
@@ -49,7 +51,9 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 		base.Vars = new VarDefs() { Story = this, StrictMode = true };
 
 		macros1 = new Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros() { Story = this };
-		macros2 = new DialogueEnder() { Story = this };
+		macros2 = new HOOK() { Story = this };
+		macros3 = new DialogueEnder() { Story = this };
+		macros4 = new GlobalVarMacros() { Story = this };
 
 		base.Init();
 		passage1_Init();
@@ -402,9 +406,7 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"No, thank you! I'll be very happy to see these hooligans behind bars.\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return link("Investigate Further", "Leave", null);
-		yield return lineBreak();
-		yield return link("Investigate Elsewhere", "End", null);
+		macros3.EndDialogue("sdgadf");
 		yield break;
 	}
 
@@ -437,7 +439,7 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage19_Main()
 	{
-		macros2.ChangeScene("Demo_End");
+		macros3.ChangeScene("Demo_End");
 		yield break;
 	}
 
@@ -452,7 +454,7 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage20_Main()
 	{
-		macros2.EndDialogue("Blease");
+		macros3.EndDialogue("Blease");
 		yield break;
 	}
 
