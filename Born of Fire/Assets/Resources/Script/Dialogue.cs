@@ -25,8 +25,9 @@ public class Dialogue : MonoBehaviour {
 
     public ScrollRect consoleScroll;
 
-    public float updateTime = 20;
+    public float updateTime = 5;
     public float updateBuffer = 0;
+    public int characterTime = 2;
 
     string speaker;
 
@@ -220,15 +221,21 @@ class EmptyQueueAction : QueuedAction {
 }
 
 class QueuedDisplayText : QueuedAction {
+
+    static float epsilon = 0.1f;
+
     public Text field;
     public Text spacer;
     public string text;
 
+    float lastSize;
+
     public QueuedDisplayText(GameObject _newTextElement, StoryOutput _output) {
         field = _newTextElement.GetComponent<Text>();
         text = _output.Text;
-        field.text = text;
+        //field.text = text;
         _newTextElement.SetActive(false);
+        lastSize = 0;
     }
 
     public override IEnumerator PerformAction(Dialogue d) {
@@ -236,21 +243,36 @@ class QueuedDisplayText : QueuedAction {
 
         field.gameObject.transform.SetParent(d.dialogueContainer.transform);
 
-        LayoutRebuilder.ForceRebuildLayoutImmediate(d.dialogueContainer.GetComponent<RectTransform>());
-
-        yield return d.StartCoroutine(d.ScrollToBottom());
+        for (int i = 0; i < text.Length; i++) {
+            field.text += text[i];
+            LayoutRebuilder.ForceRebuildLayoutImmediate(d.dialogueContainer.GetComponent<RectTransform>());
+            if (field.preferredHeight - lastSize > epsilon) {
+                lastSize = field.preferredHeight;
+                yield return d.StartCoroutine(d.ScrollToBottom());
+            } else {
+                for (int j = 0; j < d.characterTime; j++) {
+                    yield return null;
+                }
+            }
+        }
     }
 }
 
 class QueuedDisplayLink : QueuedAction {
+
+    static float epsilon = 0.1f;
+
     public Text field;
     public string text;
 
+    double lastSize;
+
     public QueuedDisplayLink(GameObject _newTextElement, StoryLink link) {
         field = _newTextElement.GetComponent<Text>();
-        field.text = link.Text;
+        //field.text = link.Text;
         text = link.Text;
         _newTextElement.SetActive(false);
+        lastSize = 0;
     }
 
     public override IEnumerator PerformAction(Dialogue d) {
@@ -258,9 +280,18 @@ class QueuedDisplayLink : QueuedAction {
 
         field.gameObject.transform.SetParent(d.dialogueContainer.transform);
 
-        LayoutRebuilder.ForceRebuildLayoutImmediate(d.dialogueContainer.GetComponent<RectTransform>());
-
-        yield return d.StartCoroutine(d.ScrollToBottom());
+        for (int i = 0; i < text.Length; i++) {
+            field.text += text[i];
+            LayoutRebuilder.ForceRebuildLayoutImmediate(d.dialogueContainer.GetComponent<RectTransform>());
+            if (field.preferredHeight - lastSize > epsilon){
+                lastSize = field.preferredHeight;
+                yield return d.StartCoroutine(d.ScrollToBottom());
+            } else {
+                for (int j = 0; j < d.characterTime; j++) {
+                    yield return null;
+                }
+            }
+        }
     }
 }
 

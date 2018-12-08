@@ -371,8 +371,9 @@ MonoBehaviour:
   speakerObject: {fileID: 657942707}
   speakerBox: {fileID: 657942706}
   consoleScroll: {fileID: 0}
-  updateTime: 20
+  updateTime: 10
   updateBuffer: 0
+  characterTime: 2
   open: 0
 --- !u!114 &493959543
 MonoBehaviour:
@@ -463,17 +464,17 @@ Prefab:
     - target: {fileID: 224309288428592838, guid: d2ec311273f1848a995676fe64a31be2,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224309288428592838, guid: d2ec311273f1848a995676fe64a31be2,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -554
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224309288428592838, guid: d2ec311273f1848a995676fe64a31be2,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -309
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224309288428592838, guid: d2ec311273f1848a995676fe64a31be2,
         type: 2}
