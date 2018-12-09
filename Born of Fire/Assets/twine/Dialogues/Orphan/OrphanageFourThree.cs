@@ -40,8 +40,9 @@ public partial class @OrphanageFourThree: Cradle.StoryFormats.Harlowe.HarloweSto
 	// ---------------
 
 	public readonly Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros macros1;
-	public readonly DialogueEnder macros2;
-	public readonly GlobalVarMacros macros3;
+	public readonly HOOK macros2;
+	public readonly DialogueEnder macros3;
+	public readonly GlobalVarMacros macros4;
 
 	@OrphanageFourThree()
 	{
@@ -50,8 +51,9 @@ public partial class @OrphanageFourThree: Cradle.StoryFormats.Harlowe.HarloweSto
 		base.Vars = new VarDefs() { Story = this, StrictMode = true };
 
 		macros1 = new Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros() { Story = this };
-		macros2 = new DialogueEnder() { Story = this };
-		macros3 = new GlobalVarMacros() { Story = this };
+		macros2 = new HOOK() { Story = this };
+		macros3 = new DialogueEnder() { Story = this };
+		macros4 = new GlobalVarMacros() { Story = this };
 
 		base.Init();
 		passage1_Init();
@@ -198,7 +200,7 @@ public partial class @OrphanageFourThree: Cradle.StoryFormats.Harlowe.HarloweSto
 
 	IStoryThread passage7_Main()
 	{
-		macros2.EndDialogue(" ");
+		macros3.ChangeScene("Exp2_OverworldMenuSelect");
 		yield break;
 	}
 

@@ -41,6 +41,9 @@ public class Dialogue : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        updateTime = 5;
+        characterTime = 0;
+
         if(textTemplate == null) {
             textTemplate = Resources.Load(@"Prefabs/Text") as GameObject;
         }

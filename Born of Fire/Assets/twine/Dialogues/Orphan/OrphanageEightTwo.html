@@ -11,7 +11,9 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="OrphanageEightTwo" startnode="1" creator="Twine" creator-version="2.2.1" ifid="906C93A0-53D6-411E-BBFC-AA7A9DC3BE1A" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Laboratory with Sheriff" tags="" position="583,426" size="100,100">(SetSpeaker: &quot;Sheriff&quot;)
+<tw-storydata name="OrphanageEightTwo" startnode="1" creator="Twine" creator-version="2.2.1" ifid="906C93A0-53D6-411E-BBFC-AA7A9DC3BE1A" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Laboratory with Sheriff" tags="" position="583,426" size="100,100">(SetSpeaker: &quot;Sheriff&quot;)
 &quot;My god...Who would have thought all this was down here?&quot;
 
 [[&quot;Any idea what this place is for?&quot; -&gt; 2]]</tw-passagedata><tw-passagedata pid="2" name=" 2" tags="" position="583,576" size="100,100">&quot;I&#39;m not known for my imagination, but if I had a good imagination I&#39;d say this is some kind of lab for science experiments, and probably not the ethical kind.&quot;
@@ -34,7 +36,7 @@
 
 [[&quot;But if it&#39;s government lingo...&quot; -&gt; 10]]</tw-passagedata><tw-passagedata pid="10" name=" 10" tags="" position="583,1776" size="100,100">&quot;Let&#39;s not jump to conclusions. We wouldn&#39;t want to cross those men in black now, would we?&quot;
 
-[[&quot;Smart plan. For now, let&#39;s try to find some more documents.&quot; -&gt; 11]]</tw-passagedata><tw-passagedata pid="11" name=" 11" tags="" position="583,1926" size="100,100">(ChangeSpeaker: &quot; &quot;)
+[[&quot;Smart plan. For now, let&#39;s try to find some more documents.&quot; -&gt; 11]]</tw-passagedata><tw-passagedata pid="11" name=" 11" tags="" position="583,1926" size="100,100">(SetSpeaker: &quot; &quot;)
 You and the sheriff search through the filing cabinets and drawers, eventually scrapping together a small stack of papers.
 
 [[Read &quot;Methods&quot;. -&gt; 12]]
@@ -97,7 +99,7 @@ A fire was started in the facility today. Staff managed to extinguish it, but th
 
 [[&quot;Stay safe, sheriff.&quot; -&gt; 15]]</tw-passagedata><tw-passagedata pid="23" name=" 15" tags="" position="1001,2394" size="100,100">&quot;You as well, detective. Just what in the hell have we found here...?&quot;
 
-[[Leave. -&gt; EndDia]]</tw-passagedata><tw-passagedata pid="24" name=" EndDia" tags="" position="1001,2544" size="100,100">(EndDialogue: &quot; &quot;)</tw-passagedata></tw-storydata>
+[[Leave. -&gt; EndDia]]</tw-passagedata><tw-passagedata pid="24" name=" EndDia" tags="" position="1001,2544" size="100,100">(ChangeScene:&quot;Exp4_Inn&quot;)</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

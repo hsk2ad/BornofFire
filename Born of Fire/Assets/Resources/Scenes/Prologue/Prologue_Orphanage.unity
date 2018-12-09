@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ae8b24ad9d6486dabeae29fb738654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoPlay: 1
+  AutoPlay: 0
   StartPassage: Outside the Orphanage
   AdditionalCues: []
   DebugMode: 0
@@ -731,88 +731,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1754901305}
   m_CullTransparentMesh: 0
---- !u!1 &1771939424
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1771939428}
-  - component: {fileID: 1771939426}
-  - component: {fileID: 1771939425}
-  - component: {fileID: 1771939427}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1771939425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1771939424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5add171ecc39848afb1847c9d7c1bee9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1771939426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1771939424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58d2e1ac0a1da4077a4b29560a47a927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  story: {fileID: 1771939427}
-  textTemplate: {fileID: 0}
-  linkTemplate: {fileID: 0}
-  linebreakTemplate: {fileID: 0}
-  spacerTemplate: {fileID: 0}
-  dialogueHolder: {fileID: 0}
-  dialogueContainer: {fileID: 0}
-  speakerObject: {fileID: 0}
-  speakerBox: {fileID: 0}
-  consoleScroll: {fileID: 0}
-  updateTime: 20
-  updateBuffer: 0
-  characterTime: 2
-  open: 0
---- !u!114 &1771939427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1771939424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc77f004a00f4fbf80fd9071f9e7c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoPlay: 0
-  StartPassage: Enter the Diner
-  AdditionalCues: []
-  DebugMode: 0
---- !u!4 &1771939428
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1771939424}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1885100309
 GameObject:
   m_ObjectHideFlags: 0

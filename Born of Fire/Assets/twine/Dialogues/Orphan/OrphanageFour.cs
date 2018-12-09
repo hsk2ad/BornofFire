@@ -40,8 +40,9 @@ public partial class @OrphanageFour: Cradle.StoryFormats.Harlowe.HarloweStory
 	// ---------------
 
 	public readonly Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros macros1;
-	public readonly DialogueEnder macros2;
-	public readonly GlobalVarMacros macros3;
+	public readonly HOOK macros2;
+	public readonly DialogueEnder macros3;
+	public readonly GlobalVarMacros macros4;
 
 	@OrphanageFour()
 	{
@@ -50,21 +51,14 @@ public partial class @OrphanageFour: Cradle.StoryFormats.Harlowe.HarloweStory
 		base.Vars = new VarDefs() { Story = this, StrictMode = true };
 
 		macros1 = new Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros() { Story = this };
-		macros2 = new DialogueEnder() { Story = this };
-		macros3 = new GlobalVarMacros() { Story = this };
+		macros2 = new HOOK() { Story = this };
+		macros3 = new DialogueEnder() { Story = this };
+		macros4 = new GlobalVarMacros() { Story = this };
 
 		base.Init();
 		passage1_Init();
 		passage2_Init();
 		passage3_Init();
-		passage4_Init();
-		passage5_Init();
-		passage6_Init();
-		passage7_Init();
-		passage8_Init();
-		passage9_Init();
-		passage10_Init();
-		passage11_Init();
 	}
 
 	// ---------------
@@ -101,15 +95,7 @@ public partial class @OrphanageFour: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage2_Main()
 	{
-		yield return text("After working up the nerve to step into the burned and possibly unstable building, you enter into what's left of the orphanage. ");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return text("The inside of the orphanage is no nicer than the outside, with almost every wooden surface charred black. You see what looks to be destroyed furniture and glassware scattered around.");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("Check the room on the left. ", " 3", null);
-		yield return lineBreak();
-		yield return link("Check the room on the right. ", " 3.5", null);
+		macros3.ChangeScene("Exp_Orphanage_Hall");
 		yield break;
 	}
 
@@ -128,153 +114,6 @@ public partial class @OrphanageFour: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return lineBreak();
 		yield return link("Go into the building. ", " 2", null);
-		yield break;
-	}
-
-
-	// .............
-	// #4:  3
-
-	void passage4_Init()
-	{
-		this.Passages[@" 3"] = new StoryPassage(@" 3", new string[]{  }, passage4_Main);
-	}
-
-	IStoryThread passage4_Main()
-	{
-		yield return text("You peek your head into the room, but there's nothing besides ash and cobwebs.");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("Back to the hallway. ", " 2", null);
-		yield break;
-	}
-
-
-	// .............
-	// #5:  3.5
-
-	void passage5_Init()
-	{
-		this.Passages[@" 3.5"] = new StoryPassage(@" 3.5", new string[]{  }, passage5_Main);
-	}
-
-	IStoryThread passage5_Main()
-	{
-		yield return text("The room is empty, or seems to be until you notice something under a broken floorboard. You bend down and pick it up. It's a small doll of a girl with braids, accessories and everything included. You decide to leave it where you found it.");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("Keep exploring. ", " 4", null);
-		yield break;
-	}
-
-
-	// .............
-	// #6:  4
-
-	void passage6_Init()
-	{
-		this.Passages[@" 4"] = new StoryPassage(@" 4", new string[]{  }, passage6_Main);
-	}
-
-	IStoryThread passage6_Main()
-	{
-		yield return text("Back in the hallway, you take a peek around. There are three closed doors further down the hallway, apparently spared from the fire's wrath.");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("Check the first door. ", " 5", null);
-		yield return lineBreak();
-		yield return link("Check the second door. ", " 5.1", null);
-		yield return lineBreak();
-		yield return link("Check the third door. ", " 5.2", null);
-		yield break;
-	}
-
-
-	// .............
-	// #7:  5
-
-	void passage7_Init()
-	{
-		this.Passages[@" 5"] = new StoryPassage(@" 5", new string[]{  }, passage7_Main);
-	}
-
-	IStoryThread passage7_Main()
-	{
-		yield return text("The door only leads you to a closet, which is eerily empty of both ash and possessions. On the ground and on the inside of the door, there are what seem to be...claw marks?");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("Back to the hallway. ", " 4", null);
-		yield break;
-	}
-
-
-	// .............
-	// #8:  5.1
-
-	void passage8_Init()
-	{
-		this.Passages[@" 5.1"] = new StoryPassage(@" 5.1", new string[]{  }, passage8_Main);
-	}
-
-	IStoryThread passage8_Main()
-	{
-		yield return text("You open the door and step into a room that barely qualifies as a kitchen, given its small dimensions. Blackened pots and pans sit on what remains of the shelves and counter.");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("Back to the hallway. ", " 4", null);
-		yield break;
-	}
-
-
-	// .............
-	// #9:  5.2
-
-	void passage9_Init()
-	{
-		this.Passages[@" 5.2"] = new StoryPassage(@" 5.2", new string[]{  }, passage9_Main);
-	}
-
-	IStoryThread passage9_Main()
-	{
-		yield return text("The door is locked.");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("Back to the hallway. ", " 4", null);
-		yield return lineBreak();
-		yield return link("Break down the door. ", " 6", null);
-		yield break;
-	}
-
-
-	// .............
-	// #10:  6
-
-	void passage10_Init()
-	{
-		this.Passages[@" 6"] = new StoryPassage(@" 6", new string[]{  }, passage10_Main);
-	}
-
-	IStoryThread passage10_Main()
-	{
-		yield return text("Sure enough, with a hard push the door caves in, most likely weakened by the fire. In front of you lies a narrow staircase leading down. It's dark.");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link("Take out a flashlight and continue on. ", " 7", null);
-		yield break;
-	}
-
-
-	// .............
-	// #11:  7
-
-	void passage11_Init()
-	{
-		this.Passages[@" 7"] = new StoryPassage(@" 7", new string[]{  }, passage11_Main);
-	}
-
-	IStoryThread passage11_Main()
-	{
-		yield return text("Double-click this passage to edit it.");
 		yield break;
 	}
 

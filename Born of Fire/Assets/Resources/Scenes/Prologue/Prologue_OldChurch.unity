@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9556cdf375d5845f7a9fe63348c7b1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoPlay: 1
+  AutoPlay: 0
   StartPassage: Outside
   AdditionalCues: []
   DebugMode: 0
@@ -285,6 +285,7 @@ MonoBehaviour:
   consoleScroll: {fileID: 0}
   updateTime: 20
   updateBuffer: 0
+  characterTime: 2
   open: 0
 --- !u!114 &387728115
 MonoBehaviour:

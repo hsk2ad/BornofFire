@@ -9,30 +9,87 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/MainMenu.unity
     guid: 27c822c502f68447b9a937bf51663dd0
   - enabled: 1
-    path: Assets/Resources/Scenes/Prologue_CaseIntro.unity
-    guid: d741fbc84205847028ee64603a7a85ad
-  - enabled: 1
-    path: Assets/Resources/Scenes/Prologue_SherrifScene1.unity
+    path: Assets/Resources/Scenes/Prologue/Prologue_SherrifScene1.unity
     guid: afad4dc5ff4044fd5af2aada86285799
   - enabled: 1
-    path: Assets/Resources/Scenes/Prologue_OverworldMenuSelect.unity
+    path: Assets/Resources/Scenes/Prologue/Prologue_OverworldMenuSelect.unity
     guid: eec2b3b9c9aca4c5f906c1d47ca9ef05
   - enabled: 1
-    path: Assets/Resources/Scenes/Prologue_Diner.unity
+    path: Assets/Resources/Scenes/Prologue/Prologue_Orphanage.unity
     guid: b5e9d10c924744bf7a3cda242526b830
   - enabled: 1
-    path: Assets/Resources/Scenes/Prologue_Inn.unity
-    guid: a1db2639c81a8443386a06a9d83083e1
-  - enabled: 1
-    path: Assets/Resources/Scenes/Prologue_OldChurch.unity
-    guid: f5ec944f36c494fde891a101620ef879
-  - enabled: 1
-    path: Assets/Resources/Scenes/Prologue_OldGary.unity
+    path: Assets/Resources/Scenes/Prologue/Prologue_OldGary.unity
     guid: 5fd10b793c1064011b6b76341bda37b8
   - enabled: 1
-    path: Assets/Resources/Scenes/Demo_End.unity
-    guid: 029a47df8d5744bfea638af4e6c962c8
+    path: Assets/Resources/Scenes/Prologue/Prologue_OldChurch.unity
+    guid: f5ec944f36c494fde891a101620ef879
   - enabled: 1
-    path: Assets/Resources/Scenes/Prologue_NewChurch.unity
+    path: Assets/Resources/Scenes/Prologue/Prologue_NewChurch.unity
     guid: d98cf325b644b4e2a9929c0d2c8fe658
+  - enabled: 1
+    path: Assets/Resources/Scenes/Prologue/Prologue_Inn.unity
+    guid: a1db2639c81a8443386a06a9d83083e1
+  - enabled: 1
+    path: Assets/Resources/Scenes/Prologue/Prologue_Diner.unity
+    guid: 399578b9fbdd14ae1a78078b74d67395
+  - enabled: 1
+    path: Assets/Resources/Scenes/Prologue/Prologue_CaseIntro.unity
+    guid: d741fbc84205847028ee64603a7a85ad
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp1/Exp_OverworldMenuSelect.unity
+    guid: 74540b6c768a04d74a5adf7692d22400
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp1/Exp_Orphanage_Hall.unity
+    guid: 6be7b447fb9ec4bd983a96f38f6047de
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp1/Exp_Orphanage.unity
+    guid: b7e9f5cd902cf4e60a8a478b1b417442
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp1/Exp_Inn.unity
+    guid: 022af6bec6fee426a971309720315c48
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp1/Exp_Facillity_Hall.unity
+    guid: bd7a3e3b8dc964ea4911e8d0b3d3a6b9
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp1/Exp_Diner.unity
+    guid: b755bb42e06644721af779538c4f7c70
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp2/Exp2_Sherrif.unity
+    guid: eccaa91689a6545a18808e02ac8b36cf
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp2/Exp2_OverworldMenuSelect.unity
+    guid: 23a2ddc63508341a2a03cbb098c2da3c
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp2/Exp2_Inn.unity
+    guid: a8fe7e656c2c5403ca0fe5b819afedf5
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp3/Exp3_OverworldMenuSelect.unity
+    guid: 9288067f87fb94aa3bda15180104c773
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp3/Exp3_Orphanage.unity
+    guid: 980719c9832b1426ba888ec3beb6aea0
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp3/Exp3_Facillity_Hall.unity
+    guid: dd1ad6ca2e645474ebd3444021586b6f
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp3/Exp3_Diner.unity
+    guid: 0ce5995b6dd264ec8a8ea8fba8636fb6
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp4/Exp4_Sherrif.unity
+    guid: a1374d20162904fef81de06723f71f6e
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp4/Exp4_OverworldMenuSelect.unity
+    guid: bb7c995001c204239a6aae783c4f3fbb
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp4/Exp4_Inn.unity
+    guid: 7268f3c4082f140688a7a7612439b36c
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp5/Exp5_Orphanage.unity
+    guid: 0f6afa906c8a44c029cd4dc6b0432271
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp5/Exp5_Facillity.unity
+    guid: cb05561f7aa3d488dbf55d8f9bf091b0
+  - enabled: 1
+    path: Assets/Resources/Scenes/Experiment/Exp5/Exp5_Diner.unity
+    guid: a621bf9e439c646b4bde50436eb4384a
   m_configObjects: {}

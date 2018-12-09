@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0849a62de934fb0880476d1d78fa0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoPlay: 1
+  AutoPlay: 0
   StartPassage: Case File
   AdditionalCues: []
   DebugMode: 0
@@ -258,9 +258,12 @@ MonoBehaviour:
   spacerTemplate: {fileID: 0}
   dialogueHolder: {fileID: 1401991357}
   dialogueContainer: {fileID: 0}
+  speakerObject: {fileID: 0}
+  speakerBox: {fileID: 0}
   consoleScroll: {fileID: 0}
   updateTime: 20
   updateBuffer: 0
+  characterTime: 2
   open: 0
 --- !u!224 &481930362
 RectTransform:
