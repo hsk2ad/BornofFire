@@ -42,8 +42,9 @@ public partial class @Rainbow: Cradle.StoryFormats.Harlowe.HarloweStory
 	// ---------------
 
 	public readonly Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros macros1;
-	public readonly DialogueEnder macros2;
-	public readonly GlobalVarMacros macros3;
+	public readonly HOOK macros2;
+	public readonly DialogueEnder macros3;
+	public readonly GlobalVarMacros macros4;
 
 	@Rainbow()
 	{
@@ -52,8 +53,9 @@ public partial class @Rainbow: Cradle.StoryFormats.Harlowe.HarloweStory
 		base.Vars = new VarDefs() { Story = this, StrictMode = true };
 
 		macros1 = new Cradle.StoryFormats.Harlowe.HarloweRuntimeMacros() { Story = this };
-		macros2 = new DialogueEnder() { Story = this };
-		macros3 = new GlobalVarMacros() { Story = this };
+		macros2 = new HOOK() { Story = this };
+		macros3 = new DialogueEnder() { Story = this };
+		macros4 = new GlobalVarMacros() { Story = this };
 
 		base.Init();
 		passage1_Init();
@@ -76,6 +78,7 @@ public partial class @Rainbow: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage18_Init();
 		passage19_Init();
 		passage20_Init();
+		passage21_Init();
 	}
 
 	// ---------------
@@ -188,8 +191,6 @@ public partial class @Rainbow: Cradle.StoryFormats.Harlowe.HarloweStory
 	IStoryThread passage6_Main()
 	{
 		yield return text("\"I don't know anything. We went to the church, we left the church, the church caught on fire, the end.\"");
-		yield return lineBreak();
-		yield return lineBreak();
 		yield break;
 	}
 
@@ -272,7 +273,7 @@ public partial class @Rainbow: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text(" to true)");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros3.ExportVar("Fae");
+		macros4.ExportVar("Fae");
 		yield break;
 	}
 
@@ -467,7 +468,22 @@ public partial class @Rainbow: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"Umm... you're welcome?\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		macros2.EndDialogue("YOLO420XDXDXDXDXD");
+		yield return link("Back to the others.", "Back to the others.", null);
+		yield break;
+	}
+
+
+	// .............
+	// #21: Back to the others.
+
+	void passage21_Init()
+	{
+		this.Passages[@"Back to the others."] = new StoryPassage(@"Back to the others.", new string[]{  }, passage21_Main);
+	}
+
+	IStoryThread passage21_Main()
+	{
+		macros3.ChangeScene("Fae_Park");
 		yield break;
 	}
 

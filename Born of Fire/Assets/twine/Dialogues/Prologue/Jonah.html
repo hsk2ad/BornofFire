@@ -13,7 +13,9 @@
 
 <tw-storydata name="Jonah" startnode="1" creator="Twine" creator-version="2.2.1" ifid="82AB0F51-6620-4144-92A4-7C2D120CAE58" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 </script><tw-passagedata pid="1" name="What&#39;s up?" tags="" position="412,187" size="100,100">&quot;Good Evening, Officer&quot;
 
@@ -32,14 +34,16 @@
 
 (ImportVar: &quot;Fae&quot;)
 
-(if: $Fae is true) [[&quot;Your friends say they saw something.&quot;]]
+(if: $Fae is true)[
+[[&quot;Your friends say they saw something.&quot;]]
+]
 
 [[&quot;Hm. Have a nice day.&quot;-&gt;end]]</tw-passagedata><tw-passagedata pid="7" name="&quot;Your friends say they saw something.&quot;" tags="" position="302,937" size="100,100">&quot;My friends have good imaginations.&quot;
 Despite the confidence of the statement, his voice shook.
 
 
-[[&quot;Indeed thaet do.&quot;-&gt;end]]
-[[&quot;You saw something too, didn&#39;t you?&quot;-&gt;idk]]</tw-passagedata><tw-passagedata pid="8" name="end" tags="" position="452,937" size="100,100">(EndDialogue: &quot;End me.&quot;)</tw-passagedata><tw-passagedata pid="9" name="idk" tags="" position="302,1087" size="100,100">&quot;I don&#39;t know what I saw. Or heard. A trick of the light. Some kid in a costume maybe.&quot;
+[[&quot;Indeed they do.&quot;-&gt;end]]
+[[&quot;You saw something too, didn&#39;t you?&quot;-&gt;idk]]</tw-passagedata><tw-passagedata pid="8" name="end" tags="" position="452,937" size="100,100">(ChangeScene:&quot;Fae_Park&quot;)</tw-passagedata><tw-passagedata pid="9" name="idk" tags="" position="302,1087" size="100,100">&quot;I don&#39;t know what I saw. Or heard. A trick of the light. Some kid in a costume maybe.&quot;
 
 [[&quot;Interesting theories. Thank you for your time.&quot;-&gt;end]]</tw-passagedata></tw-storydata>
 

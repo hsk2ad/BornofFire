@@ -5,11 +5,13 @@ using Cradle;
 
 public class CrawlspaceOpener : MonoBehaviour {
 
+    public static bool open = false;
+
     public GameObject crawlspace;
 
 	// Use this for initialization
 	void Start () {
-        crawlspace.SetActive(false);
+        crawlspace.SetActive(open);
 	}
 	
 	// Update is called once per frame
@@ -18,13 +20,13 @@ public class CrawlspaceOpener : MonoBehaviour {
 	}
 
     public void OPEN() {
-        crawlspace.SetActive(true);
+        //crawlspace.SetActive(true);
     }
 }
 
 public class HOOK : RuntimeMacros {
     [RuntimeMacro]
     public void OpenCrawlspace(string blah) {
-        this.Story.SendMessage("OPEN");
+        CrawlspaceOpener.open = true;
     }
 }

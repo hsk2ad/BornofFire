@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f479f8c2c23da4c3ba058842db50f2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToGoTo: Prologue_OverworldMenuSelect
+  ToGoTo: Fae_OverworldMenuSelect
 --- !u!114 &205975884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,8 +205,7 @@ GameObject:
   - component: {fileID: 387728111}
   - component: {fileID: 387728116}
   - component: {fileID: 387728115}
-  - component: {fileID: 387728114}
-  - component: {fileID: 387728113}
+  - component: {fileID: 387728117}
   - component: {fileID: 387728112}
   m_Layer: 5
   m_Name: Investigate
@@ -241,51 +240,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 387728110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bea869b2e1d66458083ed07579d98af6, type: 3}
+  m_Script: {fileID: 11500000, guid: f479f8c2c23da4c3ba058842db50f2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialoguesToTrigger:
-  - {fileID: 387728114}
-  cycles: 0
---- !u!114 &387728113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 387728110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9556cdf375d5845f7a9fe63348c7b1a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoPlay: 1
-  StartPassage: Outside
-  AdditionalCues: []
-  DebugMode: 0
---- !u!114 &387728114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 387728110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58d2e1ac0a1da4077a4b29560a47a927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  story: {fileID: 387728113}
-  textTemplate: {fileID: 0}
-  linkTemplate: {fileID: 0}
-  linebreakTemplate: {fileID: 0}
-  spacerTemplate: {fileID: 0}
-  dialogueHolder: {fileID: 495898529}
-  dialogueContainer: {fileID: 0}
-  speakerObject: {fileID: 495898528}
-  speakerBox: {fileID: 495898527}
-  consoleScroll: {fileID: 0}
-  updateTime: 20
-  updateBuffer: 0
-  open: 0
+  ToGoTo: Fae_Crawlspace
 --- !u!114 &387728115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,6 +278,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 387728110}
   m_CullTransparentMesh: 0
+--- !u!114 &387728117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 387728110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e96428d24534e149c63215aa36541c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crawlspace: {fileID: 387728110}
 --- !u!1001 &495898525
 Prefab:
   m_ObjectHideFlags: 0
@@ -451,22 +421,6 @@ Prefab:
 --- !u!224 &495898526 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224309288428592838, guid: d2ec311273f1848a995676fe64a31be2,
-    type: 2}
-  m_PrefabInternal: {fileID: 495898525}
---- !u!114 &495898527 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114550318405446704, guid: d2ec311273f1848a995676fe64a31be2,
-    type: 2}
-  m_PrefabInternal: {fileID: 495898525}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1 &495898528 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1047814885150176, guid: d2ec311273f1848a995676fe64a31be2,
-    type: 2}
-  m_PrefabInternal: {fileID: 495898525}
---- !u!1 &495898529 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1148766889635190, guid: d2ec311273f1848a995676fe64a31be2,
     type: 2}
   m_PrefabInternal: {fileID: 495898525}
 --- !u!1 &1492479322
