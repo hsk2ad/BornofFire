@@ -114,7 +114,7 @@ public partial class @FarmerJamenson: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("\"What do you want?\"");
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return link("\"I am Detective _. I have a few questions about the night of the fire.\" ", " Finally", null);
+		yield return link("\"I'm the Detective that got called in. I have a few questions about the night of the fire.\" ", " Finally", null);
 		yield break;
 	}
 

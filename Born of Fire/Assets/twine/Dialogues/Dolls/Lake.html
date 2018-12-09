@@ -12,7 +12,9 @@
 <tw-story></tw-story>
 
 <tw-storydata name="Lake" startnode="1" creator="Twine" creator-version="2.2.1" ifid="BA1C3CD5-5F64-4C5E-8CEE-00A118F01315" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 </script><tw-passagedata pid="1" name="Start" tags="" position="584,326" size="100,100">You open your eyes, a massive headache right under your forehead.
 Your body aches, and feels as though it was stretched through a grate.
 Lifting your chest off the ground, propped up by your elbows, you look forward, trying not to turn your head and provoke your nasty migraine.
@@ -59,7 +61,7 @@ By the shore, a herd of people frantically waving their arms towards the water.
 [[Catch your breath but observe from afar.-&gt;WatchFar]]</tw-passagedata><tw-passagedata pid="9" name="Stay" tags="" position="634,743" size="100,100">Your vision recedes into the distance, zooming out like a high power lens, and you feel a phantom force tug at your back.
 One pull, then another, then a lurching familiar feeling of being spaghettified.
 Visions flash before your eyes: a lake, a drowning girl, a forest of flames watching from the shore.
-[[Black out.-&gt;BlackOut]]</tw-passagedata><tw-passagedata pid="10" name="BlackOut" tags="" position="816,851" size="100,100">(EndDialogue:&quot;end&quot;)</tw-passagedata><tw-passagedata pid="11" name="Swim" tags="" position="371,962" size="100,100">You dive into the lake, plunging into the water. A frigid grasp takes a hold of your body, sapping away at your motion. You feel as if your limbs were strapped to stone weights. You manage to find the strength to gasp for air as you move your arms into a weak breaststroke.
+[[Black out.-&gt;BlackOut]]</tw-passagedata><tw-passagedata pid="10" name="BlackOut" tags="" position="816,851" size="100,100">(ChangeScene:&quot;Credits&quot;)</tw-passagedata><tw-passagedata pid="11" name="Swim" tags="" position="371,962" size="100,100">You dive into the lake, plunging into the water. A frigid grasp takes a hold of your body, sapping away at your motion. You feel as if your limbs were strapped to stone weights. You manage to find the strength to gasp for air as you move your arms into a weak breaststroke.
 (if: $haste)[You reach the flailing girl, who is struggling to keep her head above the water, and extend your arm out to keep her afloat. How you will find the strength to make it back to shore is an afterthought. Your arm goes out... and phases straight through her body.]
 (if: not $haste)[You swim for what seems like an eternity, and raise your head up for air]
 Where the girl was, you see only a stream of bubbles, boiling to the surface with one final breath. Then, it stops.

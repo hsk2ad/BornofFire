@@ -319,7 +319,7 @@ public partial class @Lake: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage10_Main()
 	{
-		macros3.EndDialogue("end");
+		macros3.ChangeScene("Credits");
 		yield break;
 	}
 

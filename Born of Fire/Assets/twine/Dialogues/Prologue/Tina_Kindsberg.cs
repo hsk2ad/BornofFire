@@ -111,9 +111,7 @@ public partial class @Tina_Kindsberg: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return link("\"I'm sorry, what?\"", "is", null);
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return text("(set ");
-		yield return text(Vars.Fae);
-		yield return text(" to true)");
+		Vars.Fae  = true;
 		yield return lineBreak();
 		macros4.ExportVar("Fae");
 		yield break;

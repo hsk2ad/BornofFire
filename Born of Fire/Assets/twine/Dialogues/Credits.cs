@@ -105,6 +105,9 @@ public partial class @Credits: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage1_Main()
 	{
+		yield return text("Credits");
+		yield return lineBreak();
+		yield return lineBreak();
 		yield return link("Writers", "W", null);
 		yield return lineBreak();
 		yield return link("Programmers", "P", null);

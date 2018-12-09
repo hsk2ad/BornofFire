@@ -268,9 +268,7 @@ public partial class @Rainbow: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return link("\"A fairy?\"", "\"A fairy?\"", null);
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return text("(set ");
-		yield return text(Vars.Fae);
-		yield return text(" to true)");
+		Vars.Fae  = true;
 		yield return lineBreak();
 		yield return lineBreak();
 		macros4.ExportVar("Fae");

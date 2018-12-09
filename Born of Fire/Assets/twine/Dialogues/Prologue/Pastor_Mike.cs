@@ -271,9 +271,7 @@ public partial class @Pastor_Mike: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return text("(set ");
-		yield return text(Vars.curse);
-		yield return text(" to true)");
+		Vars.curse  = true;
 		yield return lineBreak();
 		macros4.ExportVar("curse");
 		yield return lineBreak();
