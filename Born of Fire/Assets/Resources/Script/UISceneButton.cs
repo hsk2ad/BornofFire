@@ -21,7 +21,7 @@ public class UISceneButton : MonoBehaviour, IPointerClickHandler {
 
     public void OnPointerClick(PointerEventData pedata) {
         Debug.Log("works....");
-        if (pedata.button == PointerEventData.InputButton.Left) {
+        if (pedata.button == PointerEventData.InputButton.Left && DialogueSingletonManager.IsAvailable()) {
 
             SceneTransition.GoToScene(ToGoTo);
         }
