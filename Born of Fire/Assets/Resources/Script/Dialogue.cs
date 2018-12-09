@@ -42,7 +42,7 @@ public class Dialogue : MonoBehaviour {
     void Start () {
 
         updateTime = 5;
-        characterTime = 0;
+        characterTime = 2;
 
         if(textTemplate == null) {
             textTemplate = Resources.Load(@"Prefabs/Text") as GameObject;
